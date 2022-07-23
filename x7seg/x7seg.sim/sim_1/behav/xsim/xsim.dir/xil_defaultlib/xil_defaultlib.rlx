@@ -1,0 +1,11 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Xilinx/Vivado/projects/x7seg/x7seg.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/Xilinx/Vivado/projects/x7seg/x7seg.srcs/sim_1/new/sim_1.v,1623835469,verilog,,,,sim_1,,,,,,,,
+D:/Xilinx/Vivado/projects/x7seg/x7seg.srcs/sources_1/new/BCD.v,1623813797,verilog,,D:/Xilinx/Vivado/projects/x7seg/x7seg.srcs/sources_1/new/clkdiv.v,,BCD,,,,,,,,
+D:/Xilinx/Vivado/projects/x7seg/x7seg.srcs/sources_1/new/clkdiv.v,1623813747,verilog,,D:/Xilinx/Vivado/projects/x7seg/x7seg.srcs/sources_1/new/scroll_top.v,,clkdiv,,,,,,,,
+D:/Xilinx/Vivado/projects/x7seg/x7seg.srcs/sources_1/new/scroll_top.v,1623806796,verilog,,D:/Xilinx/Vivado/projects/x7seg/x7seg.srcs/sources_1/new/shift_array.v,,scroll_top,,,,,,,,
+D:/Xilinx/Vivado/projects/x7seg/x7seg.srcs/sources_1/new/shift_array.v,1623837587,verilog,,D:/Xilinx/Vivado/projects/x7seg/x7seg.srcs/sources_1/new/x7seg_msg.v,,shift_array,,,,,,,,
+D:/Xilinx/Vivado/projects/x7seg/x7seg.srcs/sources_1/new/x7seg_msg.v,1623763568,verilog,,D:/Xilinx/Vivado/projects/x7seg/x7seg.srcs/sim_1/new/sim_1.v,,x7seg_msg,,,,,,,,

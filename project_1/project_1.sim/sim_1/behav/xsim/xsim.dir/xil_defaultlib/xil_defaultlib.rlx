@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Xilinx/Vivado/projects/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1513215260,verilog,,,,glbl,,,,,,,,
+D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sim_1/new/ramsim.v,1622903336,verilog,,,,ramsim,,,,,,,,
+D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/choose.v,1622901826,verilog,,D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/newram.v,,choose,,,,,,,,
+D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/newram.v,1622899838,verilog,,D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/ram.v,,newram,,,,,,,,
+D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/ram.v,1622899172,verilog,,D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/top.v,,ram,,,,,,,,
+D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/top.v,1622898718,verilog,,D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sim_1/new/ramsim.v,,top,,,,,,,,

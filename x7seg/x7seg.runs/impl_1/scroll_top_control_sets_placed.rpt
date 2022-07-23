@@ -1,0 +1,174 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Jun 16 18:45:48 2021
+| Host         : Universe running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file scroll_top_control_sets_placed.rpt
+| Design       : scroll_top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   111 |
+| Unused register locations in slices containing registers |   769 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |             131 |           87 |
+| No           | Yes                   | No                     |              36 |           36 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+---------------+----------------------------------+------------------+----------------+
+|            Clock Signal           | Enable Signal |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-----------------------------------+---------------+----------------------------------+------------------+----------------+
+|  U2/msg_array_reg[39]_LDC_i_1_n_0 |               | U2/msg_array_reg[39]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[23]_LDC_i_1_n_0 |               | U2/msg_array_reg[23]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[27]_LDC_i_1_n_0 |               | U2/msg_array_reg[27]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[24]_LDC_i_1_n_0 |               | U2/msg_array_reg[24]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[28]_LDC_i_1_n_0 |               | U2/msg_array_reg[28]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[21]_LDC_i_1_n_0 |               | U2/msg_array_reg[21]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[29]_LDC_i_1_n_0 |               | U2/msg_array_reg[29]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[25]_LDC_i_1_n_0 |               | U2/msg_array_reg[25]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[26]_LDC_i_1_n_0 |               | U2/msg_array_reg[26]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[30]_LDC_i_1_n_0 |               | U2/msg_array_reg[30]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[33]_LDC_i_1_n_0 |               | U2/msg_array_reg[33]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[38]_LDC_i_1_n_0 |               | U2/msg_array_reg[38]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[36]_LDC_i_1_n_0 |               | U2/msg_array_reg[36]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[57]_LDC_i_1_n_0 |               | U2/msg_array_reg[57]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[35]_LDC_i_1_n_0 |               | U2/msg_array_reg[35]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[40]_LDC_i_1_n_0 |               | U2/msg_array_reg[40]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[32]_LDC_i_1_n_0 |               | U2/msg_array_reg[32]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[34]_LDC_i_1_n_0 |               | U2/msg_array_reg[34]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[42]_LDC_i_1_n_0 |               | U2/msg_array_reg[42]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[31]_LDC_i_1_n_0 |               | U2/msg_array_reg[31]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[37]_LDC_i_1_n_0 |               | U2/msg_array_reg[37]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[43]_LDC_i_1_n_0 |               | U2/msg_array_reg[43]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[41]_LDC_i_1_n_0 |               | U2/msg_array_reg[41]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[55]_LDC_i_1_n_0 |               | U2/msg_array_reg[55]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[59]_LDC_i_1_n_0 |               | U2/msg_array_reg[59]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[53]_LDC_i_1_n_0 |               | U2/msg_array_reg[53]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[61]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[60]_LDC_i_1_n_0 |               | U2/msg_array_reg[60]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[56]_LDC_i_1_n_0 |               | U2/msg_array_reg[56]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[46]_LDC_i_1_n_0 |               | U2/msg_array_reg[46]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[58]_LDC_i_1_n_0 |               | U2/msg_array_reg[58]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[47]_LDC_i_1_n_0 |               | U2/msg_array_reg[47]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[61]_LDC_i_1_n_0 |               | U2/msg_array_reg[61]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[45]_LDC_i_1_n_0 |               | U2/msg_array_reg[45]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[54]_LDC_i_1_n_0 |               | U2/msg_array_reg[54]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[62]_LDC_i_1_n_0 |               | U2/msg_array_reg[62]_LDC_i_2_n_0 |                1 |              1 |
+|  U2/msg_array_reg[63]_LDC_i_1_n_0 |               | U2/msg_array_reg[63]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[63]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[23]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[23]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[27]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[24]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[30]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[21]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[62]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[24]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[25]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[21]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[25]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[26]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[26]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[27]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[63]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[30]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[62]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[35]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[40]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[33]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[34]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[36]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[38]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[31]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[36]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[39]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[35]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[39]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[40]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[41]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[32]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[32]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[38]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[34]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[42]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[42]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[31]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[37]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[37]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[33]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[43]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[43]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[41]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[57]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[46]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[53]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[47]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[56]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[55]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[59]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[53]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[57]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[60]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[60]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[55]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[56]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[46]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[58]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[59]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[54]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[58]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[47]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[61]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[45]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[45]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[54]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_BUFG                         |               | U2/msg_array_reg[29]_LDC_i_1_n_0 |                1 |              2 |
+|  clk_BUFG                         |               | U2/msg_array_reg[29]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_BUFG                         |               | U2/msg_array_reg[28]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_BUFG                         |               | U2/msg_array_reg[28]_LDC_i_1_n_0 |                1 |              2 |
+|  U1/out[0]                        |               | s_IBUF[4]                        |                2 |              4 |
+|  clk_100MHz_IBUF_BUFG             |               | s_IBUF[4]                        |                7 |             25 |
+|  clk_BUFG                         |               | s_IBUF[4]                        |                6 |             26 |
++-----------------------------------+---------------+----------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                   104 |
+| 2      |                     4 |
+| 4      |                     1 |
+| 16+    |                     2 |
++--------+-----------------------+
+
+

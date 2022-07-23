@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1623661225">
+  <File Type="ROUTE-PWR" Name="shumaguan_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="shumaguan.tcl"/>
+  <File Type="PWROPT-DCP" Name="shumaguan_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="shumaguan_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="shumaguan_reports.tcl"/>
+  <File Type="BG-DRC" Name="shumaguan.drc"/>
+  <File Type="OPT-HWDEF" Name="shumaguan.hwdef"/>
+  <File Type="OPT-DCP" Name="shumaguan_opt.dcp"/>
+  <File Type="OPT-DRC" Name="shumaguan_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="shumaguan_placed.dcp"/>
+  <File Type="PLACE-IO" Name="shumaguan_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="shumaguan_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="shumaguan_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="shumaguan_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="shumaguan_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="shumaguan_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="shumaguan_physopt.dcp"/>
+  <File Type="BG-BIT" Name="shumaguan.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="shumaguan_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="shumaguan_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="shumaguan_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="shumaguan_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="shumaguan_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="shumaguan_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="shumaguan.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="shumaguan_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="shumaguan.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="shumaguan_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="shumaguan.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="shumaguan_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="shumaguan.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="shumaguan_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="shumaguan_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="shumaguan_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="shumaguan_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="shumaguan_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="shumaguan_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="shumaguan_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="shumaguan.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="shumaguan_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="shumaguan_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="shumaguan.nky"/>
+  <File Type="BITSTR-BMM" Name="shumaguan_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="shumaguan.mmi"/>
+  <File Type="BITSTR-LTX" Name="shumaguan.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="shumaguan.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/shumaguan.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="shumaguan"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/xdc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/xdc.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,181 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+                   0 mdata =xxxxxxxx
+                   0 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                   0 maddr =00
+                   0 tmp=xxxxxxxx
+                   0 mdata [31:28]=x
+                   0 mdata [15:12]=x
+                   0 mdata [7:4]=x
+                   5 mdata =123487ab
+                   5 tmp=123487ab
+                   5 mdata [7:4]=a
+                   5 mdata [15:12]=f
+                   5 mdata [31:28]=f
+                  10 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                  10 mdata [15:12]=8
+                  20 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                  20 mdata [31:28]=1
+                  30 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                  30 mdata [15:12]=0
+                  30 mdata [31:28]=0
+                  40 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                  40 mdata [15:12]=8
+                  50 maddr =04
+                  50 mdata =xxxxxxxx
+                  50 tmp=xxxxxxxx
+                  50 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                  50 mdata [7:4]=0
+                  50 mdata [15:12]=0
+                  55 mdata =123487ab
+                  55 tmp=123487ab
+                  60 maddr =08
+                  60 mdata =xxxxxxxx
+                  60 tmp=xxxxxxxx
+                  65 mdata =123487ab
+                  65 tmp=123487ab
+                  70 maddr =00
+                  80 maddr =04
+                  80 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                  80 mdata [7:4]=a
+                  90 maddr =08
+                  90 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                  90 mdata [15:12]=8
+                 160 maddr =00
+                 160 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 160 mdata [15:12]=f
+                 160 mdata [31:28]=f
+                 170 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 170 mdata [15:12]=8
+                 180 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 180 mdata [31:28]=1
+                 190 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 190 mdata [15:12]=0
+                 190 mdata [31:28]=0
+                 200 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 200 mdata [15:12]=8
+                 210 maddr =04
+                 210 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                 210 mdata [7:4]=0
+                 210 mdata [15:12]=0
+                 220 maddr =08
+                 230 maddr =00
+                 240 maddr =04
+                 240 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 240 mdata [7:4]=a
+                 250 maddr =08
+                 250 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 250 mdata [15:12]=8
+                 320 maddr =00
+                 320 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 320 mdata [15:12]=f
+                 320 mdata [31:28]=f
+                 330 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 330 mdata [15:12]=8
+                 340 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 340 mdata [31:28]=1
+                 350 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 350 mdata [15:12]=0
+                 350 mdata [31:28]=0
+                 360 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 360 mdata [15:12]=8
+                 370 maddr =04
+                 370 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                 370 mdata [7:4]=0
+                 370 mdata [15:12]=0
+                 380 maddr =08
+                 390 maddr =00
+                 400 maddr =04
+                 400 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 400 mdata [7:4]=a
+                 410 maddr =08
+                 410 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 410 mdata [15:12]=8
+                 480 maddr =00
+                 480 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 480 mdata [15:12]=f
+                 480 mdata [31:28]=f
+                 490 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 490 mdata [15:12]=8
+                 500 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 500 mdata [31:28]=1
+                 510 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 510 mdata [15:12]=0
+                 510 mdata [31:28]=0
+                 520 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 520 mdata [15:12]=8
+                 530 maddr =04
+                 530 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                 530 mdata [7:4]=0
+                 530 mdata [15:12]=0
+                 540 maddr =08
+                 550 maddr =00
+                 560 maddr =04
+                 560 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 560 mdata [7:4]=a
+                 570 maddr =08
+                 570 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 570 mdata [15:12]=8
+                 640 maddr =00
+                 640 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 640 mdata [15:12]=f
+                 640 mdata [31:28]=f
+                 650 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 650 mdata [15:12]=8
+                 660 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 660 mdata [31:28]=1
+                 670 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 670 mdata [15:12]=0
+                 670 mdata [31:28]=0
+                 680 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 680 mdata [15:12]=8
+                 690 maddr =04
+                 690 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                 690 mdata [7:4]=0
+                 690 mdata [15:12]=0
+                 700 maddr =08
+                 710 maddr =00
+                 720 maddr =04
+                 720 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 720 mdata [7:4]=a
+                 730 maddr =08
+                 730 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 730 mdata [15:12]=8
+                 800 maddr =00
+                 800 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 800 mdata [15:12]=f
+                 800 mdata [31:28]=f
+                 810 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 810 mdata [15:12]=8
+                 820 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 820 mdata [31:28]=1
+                 830 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 830 mdata [15:12]=0
+                 830 mdata [31:28]=0
+                 840 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 840 mdata [15:12]=8
+                 850 maddr =04
+                 850 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                 850 mdata [7:4]=0
+                 850 mdata [15:12]=0
+                 860 maddr =08
+                 870 maddr =00
+                 880 maddr =04
+                 880 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 880 mdata [7:4]=a
+                 890 maddr =08
+                 890 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 890 mdata [15:12]=8
+                 960 maddr =00
+                 960 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 960 mdata [15:12]=f
+                 960 mdata [31:28]=f
+                 970 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 970 mdata [15:12]=8
+                 980 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 980 mdata [31:28]=1
+                 990 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 990 mdata [15:12]=0
+                 990 mdata [31:28]=0
+                1000 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                1000 mdata [15:12]=8

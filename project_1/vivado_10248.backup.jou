@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jun  6 15:02:30 2021
+# Process ID: 10248
+# Current directory: D:/Xilinx/Vivado/projects/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11768 D:\Xilinx\Vivado\projects\project_1\project_1.xpr
+# Log file: D:/Xilinx/Vivado/projects/project_1/vivado.log
+# Journal file: D:/Xilinx/Vivado/projects/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Vivado/projects/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source ramsim.tcl
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {code[3]} {code[2]} {code[1]} {code[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {result[31]} {result[30]} {result[29]} {result[28]} {result[27]} {result[26]} {result[25]} {result[24]} {result[23]} {result[22]} {result[21]} {result[20]} {result[19]} {result[18]} {result[17]} {result[16]} {result[15]} {result[14]} {result[13]} {result[12]} {result[11]} {result[10]} {result[9]} {result[8]} {result[7]} {result[6]} {result[5]} {result[4]} {result[3]} {result[2]} {result[1]} {result[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list we]]
+place_ports clk P17
+place_ports rst P5
+place_ports we R17
+place_ports we R15
+place_ports {result[0]} K2
+place_ports {result[1]} J2
+place_ports {result[2]} J3
+place_ports {result[3]} H4
+place_ports {result[4]} J4
+place_ports {result[5]} G3
+place_ports {result[6]} G4
+place_ports {result[7]} F6
+place_ports {code[0]} R1
+place_ports {code[1]} N4
+place_ports {code[2]} M4
+place_ports {code[3]} R2
+place_ports {result[8]} K3
+place_ports {result[9]} M1
+place_ports {result[10]} L1
+place_ports {result[11]} K6
+place_ports {result[12]} J5
+place_ports {result[13]} H5
+place_ports {result[14]} H6
+place_ports {result[15]} K1
+place_ports {result[16]} V17
+place_ports {result[17]} V16
+place_ports {result[18]} V15
+place_ports {result[19]} V14
+place_ports {result[20]} V12
+place_ports {result[21]} V11
+place_ports {result[22]} V10
+place_ports {result[23]} V9
+place_ports {result[24]} V7
+place_ports {result[25]} V6
+place_ports {result[26]} V5
+place_ports {result[27]} V4
+place_ports {result[28]} V2
+place_ports {result[29]} V1
+place_ports {result[30]} U18
+place_ports {result[31]} U17
+file mkdir D:/Xilinx/Vivado/projects/project_1/project_1.srcs/constrs_1/new
+close [ open D:/Xilinx/Vivado/projects/project_1/project_1.srcs/constrs_1/new/xdc.xdc w ]
+add_files -fileset constrs_1 D:/Xilinx/Vivado/projects/project_1/project_1.srcs/constrs_1/new/xdc.xdc
+set_property target_constrs_file D:/Xilinx/Vivado/projects/project_1/project_1.srcs/constrs_1/new/xdc.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+close_sim
+close_project
+open_project D:/Xilinx/Vivado/projects/shumaguan/shumaguan.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

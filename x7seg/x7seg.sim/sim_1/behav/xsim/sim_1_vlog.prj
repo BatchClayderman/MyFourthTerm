@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../x7seg.srcs/sources_1/new/BCD.v" \
+"../../../../x7seg.srcs/sources_1/new/clkdiv.v" \
+"../../../../x7seg.srcs/sources_1/new/scroll_top.v" \
+"../../../../x7seg.srcs/sources_1/new/shift_array.v" \
+"../../../../x7seg.srcs/sources_1/new/x7seg_msg.v" \
+"../../../../x7seg.srcs/sim_1/new/sim_1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

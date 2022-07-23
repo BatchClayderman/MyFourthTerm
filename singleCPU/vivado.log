@@ -1,0 +1,1502 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun  8 19:26:13 2022
+# Process ID: 17924
+# Current directory: D:/Xilinx/Vivado/projects/singleCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7180 D:\Xilinx\Vivado\projects\singleCPU\singleCPU.xpr
+# Log file: D:/Xilinx/Vivado/projects/singleCPU/vivado.log
+# Journal file: D:/Xilinx/Vivado/projects/singleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Vivado/projects/singleCPU/singleCPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/1234-tulA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Xilinx/1234-tulA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/impl_1/bt_uart.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/impl_1/bt_uart.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/BCD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/EXE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/IOManager.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IOManager
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/InstrumentDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrumentDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/clkdiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/scroll_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scroll_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/seq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/shift_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_array
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/x7seg_msg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_msg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sim_1/new/sim_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_1
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d6a21451c94e48eea568e06b57ade5df --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_1_behav xil_defaultlib.sim_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.rom
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.InstrumentDecoder
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.EXE
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.IOManager
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.clkdiv
+Compiling module xil_defaultlib.BCD
+Compiling module xil_defaultlib.shift_array
+Compiling module xil_defaultlib.x7seg_msg
+Compiling module xil_defaultlib.scroll_top
+Compiling module xil_defaultlib.seq
+Compiling module xil_defaultlib.filter
+Compiling module xil_defaultlib.sim_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_1_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/Xilinx/Vivado/projects/singleCPU/singleCPU.sim/sim_1/behav/xsim/xsim.dir/sim_1_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun  8 19:44:31 2022...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1562.457 ; gain = 1.309
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_1_behav -key {Behavioral:sim_1:Functional:sim_1} -tclbatch {sim_1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source sim_1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+                   0 IF/PC: addr = xxxxxxxx
+                   0 IF/PC: next_addr = xxxxxxxx
+                   0 IF/rom: read Rom xxxxxxxx -> data = xxxxxxxx
+                   0 IF: pcindex = x
+                   0 ID/CU: opcode = xx, func = xx
+                   0 ID/CU: regWE = x
+                   0 EXE/alu: a = xxxxxxxx, b = xxxxxxxx
+                   0 EXE/alu: op = xxxx
+                   0 EXE/alu: f = xxxxxxxx
+                   0 MEM/IOManager: displaydata = xxxxxxxx
+                   0 WB/reg: read Reg xx -> data1 = xxxxxxxx
+                   0 WB/reg: read Reg xx -> data2 = xxxxxxxx
+                  10 IF/PC: addr = 00000000
+                  10 IF/rom: read Rom 00000000 -> data = 8c030020
+                  10 WB/reg: read Reg 03 -> data2 = xxxxxxxx
+                  10 WB/reg: read Reg 00 -> data1 = 00000000
+                  10 ID/CU: opcode = 23, func = xx
+                  10 ID/CU: regWE = 1
+                  10 EXE/alu: op = 0001
+                  10 IF: pcindex = 0
+                  10 IF/PC: next_addr = 00000004
+                  11 EXE/alu: a = 00000000, b = 00000020
+                  11 EXE/alu: f = 00000020
+                  13 WB/reg: write 0000000d to Reg 03
+                  13 WB/reg: read Reg 03 -> data2 = 0000000d
+                  30 IF/PC: addr = 00000004
+                  30 IF/rom: read Rom 00000004 -> data = 20010001
+                  30 IF/PC: next_addr = 00000008
+                  30 WB/reg: read Reg 01 -> data2 = xxxxxxxx
+                  30 ID/CU: opcode = 08, func = xx
+                  31 MEM/IOManager/ram: read Ram 1 -> data = xxxxxxxx
+                  31 EXE/alu: a = 00000000, b = 00000001
+                  31 EXE/alu: f = 00000001
+                  33 WB/reg: write 00000001 to Reg 01
+                  33 WB/reg: read Reg 01 -> data2 = 00000001
+                  50 IF/PC: addr = 00000008
+                  50 IF/rom: read Rom 00000008 -> data = 20020001
+                  50 IF/PC: next_addr = 0000000c
+                  50 WB/reg: read Reg 02 -> data2 = xxxxxxxx
+                  53 WB/reg: write 00000001 to Reg 02
+                  53 WB/reg: read Reg 02 -> data2 = 00000001
+                  70 IF/PC: addr = 0000000c
+                  70 IF/rom: read Rom 0000000c -> data = 20050002
+                  70 IF/PC: next_addr = 00000010
+                  70 WB/reg: read Reg 05 -> data2 = xxxxxxxx
+                  71 MEM/IOManager/ram: read Ram 2 -> data = xxxxxxxx
+                  71 EXE/alu: a = 00000000, b = 00000002
+                  71 EXE/alu: f = 00000002
+                  73 WB/reg: write 00000002 to Reg 05
+                  73 WB/reg: read Reg 05 -> data2 = 00000002
+                  90 IF/PC: addr = 00000010
+                  90 IF/rom: read Rom 00000010 -> data = 20a50001
+                  90 IF/PC: next_addr = 00000014
+                  90 WB/reg: read Reg 05 -> data1 = 00000002
+                  91 MEM/IOManager/ram: read Ram 3 -> data = xxxxxxxx
+                  91 EXE/alu: a = 00000002, b = 00000001
+                  91 EXE/alu: f = 00000003
+                  93 WB/reg: write 00000003 to Reg 05
+                  93 WB/reg: read Reg 05 -> data1 = 00000003
+                  93 WB/reg: read Reg 05 -> data2 = 00000003
+                 110 IF/PC: addr = 00000014
+                 110 IF/rom: read Rom 00000014 -> data = 00222020
+                 110 IF/PC: next_addr = 00000018
+                 110 ID/CU: opcode = 00, func = 20
+                 110 WB/reg: read Reg 02 -> data2 = 00000001
+                 110 WB/reg: read Reg 01 -> data1 = 00000001
+                 111 MEM/IOManager/ram: read Ram 2 -> data = xxxxxxxx
+                 111 EXE/alu: a = 00000001, b = 00000001
+                 111 EXE/alu: f = 00000002
+                 113 WB/reg: write 00000002 to Reg 04
+                 130 IF/PC: addr = 00000018
+                 130 IF/rom: read Rom 00000018 -> data = 20410000
+                 130 IF/PC: next_addr = 0000001c
+                 130 WB/reg: read Reg 01 -> data2 = 00000001
+                 130 WB/reg: read Reg 02 -> data1 = 00000001
+                 130 ID/CU: opcode = 08, func = 20
+                 131 MEM/IOManager/ram: read Ram 1 -> data = xxxxxxxx
+                 131 EXE/alu: a = 00000001, b = 00000000
+                 131 EXE/alu: f = 00000001
+                 133 WB/reg: write 00000001 to Reg 01
+                 150 IF/PC: addr = 0000001c
+                 150 IF/rom: read Rom 0000001c -> data = 20820000
+                 150 IF/PC: next_addr = 00000020
+                 150 WB/reg: read Reg 02 -> data2 = 00000001
+                 150 WB/reg: read Reg 04 -> data1 = 00000002
+                 151 MEM/IOManager/ram: read Ram 2 -> data = xxxxxxxx
+                 151 EXE/alu: a = 00000002, b = 00000000
+                 151 EXE/alu: f = 00000002
+                 153 WB/reg: write 00000002 to Reg 02
+                 153 WB/reg: read Reg 02 -> data2 = 00000002
+                 170 IF/PC: addr = 00000020
+                 170 IF/rom: read Rom 00000020 -> data = aca40000
+                 170 IF/PC: next_addr = 00000024
+                 170 WB/reg: read Reg 04 -> data2 = 00000002
+                 170 WB/reg: read Reg 05 -> data1 = 00000003
+                 170 ID/CU: opcode = 2b, func = 20
+                 170 ID/CU: regWE = 0
+                 171 MEM/IOManager/ram: read Ram 3 -> data = xxxxxxxx
+                 171 EXE/alu: a = 00000003, b = 00000000
+                 171 EXE/alu: f = 00000003
+                 172 MEM/IOManager/ram: write 00000002 to Ram 3
+                 172 MEM/IOManager/ram: read Ram 3 -> data = 00000002
+                 190 IF/PC: addr = 00000024
+                 190 IF/rom: read Rom 00000024 -> data = ac040010
+                 190 IF/PC: next_addr = 00000028
+                 190 WB/reg: read Reg 00 -> data1 = 00000000
+                 191 EXE/alu: a = 00000000, b = 00000010
+                 191 EXE/alu: f = 00000010
+                 210 IF/PC: addr = 00000028
+                 210 MEM/IOManager: displaydata = 00000002
+                 210 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 210 IF/PC: next_addr = 00000010
+                 210 WB/reg: read Reg 03 -> data1 = 0000000d
+                 210 WB/reg: read Reg 05 -> data2 = 00000003
+                 210 ID/CU: opcode = 05, func = 20
+                 210 IF: pcindex = 1
+                 210 EXE/alu: op = 0010
+                 210 EXE/alu: f = fffffff0
+                 211 MEM/IOManager/ram: read Ram a -> data = xxxxxxxx
+                 211 EXE/alu: a = 0000000d, b = 00000003
+                 211 EXE/alu: f = 0000000a
+                 230 IF/PC: addr = 00000010
+                 230 IF/rom: read Rom 00000010 -> data = 20a50001
+                 230 IF/PC: next_addr = 00000014
+                 230 WB/reg: read Reg 05 -> data1 = 00000003
+                 230 ID/CU: opcode = 08, func = 20
+                 230 ID/CU: regWE = 1
+                 230 EXE/alu: op = 0001
+                 230 IF: pcindex = 0
+                 230 EXE/alu: f = 00000010
+                 231 MEM/IOManager/ram: read Ram 4 -> data = xxxxxxxx
+                 231 EXE/alu: a = 00000003, b = 00000001
+                 231 EXE/alu: f = 00000004
+                 233 WB/reg: write 00000004 to Reg 05
+                 233 WB/reg: read Reg 05 -> data1 = 00000004
+                 233 WB/reg: read Reg 05 -> data2 = 00000004
+                 250 IF/PC: addr = 00000014
+                 250 IF/rom: read Rom 00000014 -> data = 00222020
+                 250 IF/PC: next_addr = 00000018
+                 250 WB/reg: read Reg 02 -> data2 = 00000002
+                 250 WB/reg: read Reg 01 -> data1 = 00000001
+                 250 ID/CU: opcode = 00, func = 20
+                 251 MEM/IOManager/ram: read Ram 3 -> data = 00000002
+                 251 EXE/alu: a = 00000001, b = 00000002
+                 251 EXE/alu: f = 00000003
+                 253 WB/reg: write 00000003 to Reg 04
+                 270 IF/PC: addr = 00000018
+                 270 IF/rom: read Rom 00000018 -> data = 20410000
+                 270 IF/PC: next_addr = 0000001c
+                 270 WB/reg: read Reg 01 -> data2 = 00000001
+                 270 WB/reg: read Reg 02 -> data1 = 00000002
+                 270 ID/CU: opcode = 08, func = 20
+                 271 MEM/IOManager/ram: read Ram 2 -> data = xxxxxxxx
+                 271 EXE/alu: a = 00000002, b = 00000000
+                 271 EXE/alu: f = 00000002
+                 273 WB/reg: write 00000002 to Reg 01
+                 273 WB/reg: read Reg 01 -> data2 = 00000002
+                 290 IF/PC: addr = 0000001c
+                 290 IF/rom: read Rom 0000001c -> data = 20820000
+                 290 IF/PC: next_addr = 00000020
+                 290 WB/reg: read Reg 02 -> data2 = 00000002
+                 290 WB/reg: read Reg 04 -> data1 = 00000003
+                 291 MEM/IOManager/ram: read Ram 3 -> data = 00000002
+                 291 EXE/alu: a = 00000003, b = 00000000
+                 291 EXE/alu: f = 00000003
+                 293 WB/reg: write 00000003 to Reg 02
+                 293 WB/reg: read Reg 02 -> data2 = 00000003
+                 310 IF/PC: addr = 00000020
+                 310 IF/rom: read Rom 00000020 -> data = aca40000
+                 310 IF/PC: next_addr = 00000024
+                 310 WB/reg: read Reg 04 -> data2 = 00000003
+                 310 WB/reg: read Reg 05 -> data1 = 00000004
+                 310 ID/CU: opcode = 2b, func = 20
+                 310 ID/CU: regWE = 0
+                 311 MEM/IOManager/ram: read Ram 4 -> data = xxxxxxxx
+                 311 EXE/alu: a = 00000004, b = 00000000
+                 311 EXE/alu: f = 00000004
+                 312 MEM/IOManager/ram: write 00000003 to Ram 4
+                 312 MEM/IOManager/ram: read Ram 4 -> data = 00000003
+                 330 IF/PC: addr = 00000024
+                 330 IF/rom: read Rom 00000024 -> data = ac040010
+                 330 IF/PC: next_addr = 00000028
+                 330 WB/reg: read Reg 00 -> data1 = 00000000
+                 331 EXE/alu: a = 00000000, b = 00000010
+                 331 EXE/alu: f = 00000010
+                 350 IF/PC: addr = 00000028
+                 350 MEM/IOManager: displaydata = 00000003
+                 350 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 350 IF/PC: next_addr = 00000010
+                 350 WB/reg: read Reg 03 -> data1 = 0000000d
+                 350 WB/reg: read Reg 05 -> data2 = 00000004
+                 350 ID/CU: opcode = 05, func = 20
+                 350 IF: pcindex = 1
+                 350 EXE/alu: op = 0010
+                 350 EXE/alu: f = fffffff0
+                 351 MEM/IOManager/ram: read Ram 9 -> data = xxxxxxxx
+                 351 EXE/alu: a = 0000000d, b = 00000004
+                 351 EXE/alu: f = 00000009
+                 370 IF/PC: addr = 00000010
+                 370 IF/rom: read Rom 00000010 -> data = 20a50001
+                 370 IF/PC: next_addr = 00000014
+                 370 WB/reg: read Reg 05 -> data1 = 00000004
+                 370 ID/CU: opcode = 08, func = 20
+                 370 ID/CU: regWE = 1
+                 370 EXE/alu: op = 0001
+                 370 IF: pcindex = 0
+                 370 EXE/alu: f = 00000011
+                 371 MEM/IOManager/ram: read Ram 5 -> data = xxxxxxxx
+                 371 EXE/alu: a = 00000004, b = 00000001
+                 371 EXE/alu: f = 00000005
+                 373 WB/reg: write 00000005 to Reg 05
+                 373 WB/reg: read Reg 05 -> data1 = 00000005
+                 373 WB/reg: read Reg 05 -> data2 = 00000005
+                 390 IF/PC: addr = 00000014
+                 390 IF/rom: read Rom 00000014 -> data = 00222020
+                 390 IF/PC: next_addr = 00000018
+                 390 WB/reg: read Reg 02 -> data2 = 00000003
+                 390 WB/reg: read Reg 01 -> data1 = 00000002
+                 390 ID/CU: opcode = 00, func = 20
+                 391 EXE/alu: a = 00000002, b = 00000003
+                 393 WB/reg: write 00000005 to Reg 04
+                 410 IF/PC: addr = 00000018
+                 410 IF/rom: read Rom 00000018 -> data = 20410000
+                 410 IF/PC: next_addr = 0000001c
+                 410 WB/reg: read Reg 01 -> data2 = 00000002
+                 410 WB/reg: read Reg 02 -> data1 = 00000003
+                 410 ID/CU: opcode = 08, func = 20
+                 411 MEM/IOManager/ram: read Ram 3 -> data = 00000002
+                 411 EXE/alu: a = 00000003, b = 00000000
+                 411 EXE/alu: f = 00000003
+                 413 WB/reg: write 00000003 to Reg 01
+                 413 WB/reg: read Reg 01 -> data2 = 00000003
+                 430 IF/PC: addr = 0000001c
+                 430 IF/rom: read Rom 0000001c -> data = 20820000
+                 430 IF/PC: next_addr = 00000020
+                 430 WB/reg: read Reg 02 -> data2 = 00000003
+                 430 WB/reg: read Reg 04 -> data1 = 00000005
+                 431 MEM/IOManager/ram: read Ram 5 -> data = xxxxxxxx
+                 431 EXE/alu: a = 00000005, b = 00000000
+                 431 EXE/alu: f = 00000005
+                 433 WB/reg: write 00000005 to Reg 02
+                 433 WB/reg: read Reg 02 -> data2 = 00000005
+                 450 IF/PC: addr = 00000020
+                 450 IF/rom: read Rom 00000020 -> data = aca40000
+                 450 IF/PC: next_addr = 00000024
+                 450 WB/reg: read Reg 04 -> data2 = 00000005
+                 450 WB/reg: read Reg 05 -> data1 = 00000005
+                 450 ID/CU: opcode = 2b, func = 20
+                 450 ID/CU: regWE = 0
+                 452 MEM/IOManager/ram: write 00000005 to Ram 5
+                 452 MEM/IOManager/ram: read Ram 5 -> data = 00000005
+                 470 IF/PC: addr = 00000024
+                 470 IF/rom: read Rom 00000024 -> data = ac040010
+                 470 IF/PC: next_addr = 00000028
+                 470 WB/reg: read Reg 00 -> data1 = 00000000
+                 471 EXE/alu: a = 00000000, b = 00000010
+                 471 EXE/alu: f = 00000010
+                 490 IF/PC: addr = 00000028
+                 490 MEM/IOManager: displaydata = 00000005
+                 490 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 490 IF/PC: next_addr = 00000010
+                 490 WB/reg: read Reg 03 -> data1 = 0000000d
+                 490 WB/reg: read Reg 05 -> data2 = 00000005
+                 490 ID/CU: opcode = 05, func = 20
+                 490 IF: pcindex = 1
+                 490 EXE/alu: op = 0010
+                 490 EXE/alu: f = fffffff0
+                 491 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 491 EXE/alu: a = 0000000d, b = 00000005
+                 491 EXE/alu: f = 00000008
+                 510 IF/PC: addr = 00000010
+                 510 IF/rom: read Rom 00000010 -> data = 20a50001
+                 510 IF/PC: next_addr = 00000014
+                 510 WB/reg: read Reg 05 -> data1 = 00000005
+                 510 ID/CU: opcode = 08, func = 20
+                 510 ID/CU: regWE = 1
+                 510 EXE/alu: op = 0001
+                 510 IF: pcindex = 0
+                 510 EXE/alu: f = 00000012
+                 511 MEM/IOManager/ram: read Ram 6 -> data = xxxxxxxx
+                 511 EXE/alu: a = 00000005, b = 00000001
+                 511 EXE/alu: f = 00000006
+                 513 WB/reg: write 00000006 to Reg 05
+                 513 WB/reg: read Reg 05 -> data1 = 00000006
+                 513 WB/reg: read Reg 05 -> data2 = 00000006
+                 530 IF/PC: addr = 00000014
+                 530 IF/rom: read Rom 00000014 -> data = 00222020
+                 530 IF/PC: next_addr = 00000018
+                 530 WB/reg: read Reg 02 -> data2 = 00000005
+                 530 WB/reg: read Reg 01 -> data1 = 00000003
+                 530 ID/CU: opcode = 00, func = 20
+                 531 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 531 EXE/alu: a = 00000003, b = 00000005
+                 531 EXE/alu: f = 00000008
+                 533 WB/reg: write 00000008 to Reg 04
+                 550 IF/PC: addr = 00000018
+                 550 IF/rom: read Rom 00000018 -> data = 20410000
+                 550 IF/PC: next_addr = 0000001c
+                 550 WB/reg: read Reg 01 -> data2 = 00000003
+                 550 WB/reg: read Reg 02 -> data1 = 00000005
+                 550 ID/CU: opcode = 08, func = 20
+                 551 MEM/IOManager/ram: read Ram 5 -> data = 00000005
+                 551 EXE/alu: a = 00000005, b = 00000000
+                 551 EXE/alu: f = 00000005
+                 553 WB/reg: write 00000005 to Reg 01
+                 553 WB/reg: read Reg 01 -> data2 = 00000005
+                 570 IF/PC: addr = 0000001c
+                 570 IF/rom: read Rom 0000001c -> data = 20820000
+                 570 IF/PC: next_addr = 00000020
+                 570 WB/reg: read Reg 02 -> data2 = 00000005
+                 570 WB/reg: read Reg 04 -> data1 = 00000008
+                 571 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 571 EXE/alu: a = 00000008, b = 00000000
+                 571 EXE/alu: f = 00000008
+                 573 WB/reg: write 00000008 to Reg 02
+                 573 WB/reg: read Reg 02 -> data2 = 00000008
+                 590 IF/PC: addr = 00000020
+                 590 IF/rom: read Rom 00000020 -> data = aca40000
+                 590 IF/PC: next_addr = 00000024
+                 590 WB/reg: read Reg 04 -> data2 = 00000008
+                 590 WB/reg: read Reg 05 -> data1 = 00000006
+                 590 ID/CU: opcode = 2b, func = 20
+                 590 ID/CU: regWE = 0
+                 591 MEM/IOManager/ram: read Ram 6 -> data = xxxxxxxx
+                 591 EXE/alu: a = 00000006, b = 00000000
+                 591 EXE/alu: f = 00000006
+                 592 MEM/IOManager/ram: write 00000008 to Ram 6
+                 592 MEM/IOManager/ram: read Ram 6 -> data = 00000008
+                 610 IF/PC: addr = 00000024
+                 610 IF/rom: read Rom 00000024 -> data = ac040010
+                 610 IF/PC: next_addr = 00000028
+                 610 WB/reg: read Reg 00 -> data1 = 00000000
+                 611 EXE/alu: a = 00000000, b = 00000010
+                 611 EXE/alu: f = 00000010
+                 630 IF/PC: addr = 00000028
+                 630 MEM/IOManager: displaydata = 00000008
+                 630 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 630 IF/PC: next_addr = 00000010
+                 630 WB/reg: read Reg 03 -> data1 = 0000000d
+                 630 WB/reg: read Reg 05 -> data2 = 00000006
+                 630 ID/CU: opcode = 05, func = 20
+                 630 IF: pcindex = 1
+                 630 EXE/alu: op = 0010
+                 630 EXE/alu: f = fffffff0
+                 631 MEM/IOManager/ram: read Ram 7 -> data = xxxxxxxx
+                 631 EXE/alu: a = 0000000d, b = 00000006
+                 631 EXE/alu: f = 00000007
+                 650 IF/PC: addr = 00000010
+                 650 IF/rom: read Rom 00000010 -> data = 20a50001
+                 650 IF/PC: next_addr = 00000014
+                 650 WB/reg: read Reg 05 -> data1 = 00000006
+                 650 ID/CU: opcode = 08, func = 20
+                 650 ID/CU: regWE = 1
+                 650 EXE/alu: op = 0001
+                 650 IF: pcindex = 0
+                 650 EXE/alu: f = 00000013
+                 651 MEM/IOManager/ram: read Ram 7 -> data = xxxxxxxx
+                 651 EXE/alu: a = 00000006, b = 00000001
+                 651 EXE/alu: f = 00000007
+                 653 WB/reg: write 00000007 to Reg 05
+                 653 WB/reg: read Reg 05 -> data1 = 00000007
+                 653 WB/reg: read Reg 05 -> data2 = 00000007
+                 670 IF/PC: addr = 00000014
+                 670 IF/rom: read Rom 00000014 -> data = 00222020
+                 670 IF/PC: next_addr = 00000018
+                 670 WB/reg: read Reg 02 -> data2 = 00000008
+                 670 WB/reg: read Reg 01 -> data1 = 00000005
+                 670 ID/CU: opcode = 00, func = 20
+                 671 MEM/IOManager/ram: read Ram d -> data = xxxxxxxx
+                 671 EXE/alu: a = 00000005, b = 00000008
+                 671 EXE/alu: f = 0000000d
+                 673 WB/reg: write 0000000d to Reg 04
+                 690 IF/PC: addr = 00000018
+                 690 IF/rom: read Rom 00000018 -> data = 20410000
+                 690 IF/PC: next_addr = 0000001c
+                 690 WB/reg: read Reg 01 -> data2 = 00000005
+                 690 WB/reg: read Reg 02 -> data1 = 00000008
+                 690 ID/CU: opcode = 08, func = 20
+                 691 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 691 EXE/alu: a = 00000008, b = 00000000
+                 691 EXE/alu: f = 00000008
+                 693 WB/reg: write 00000008 to Reg 01
+                 693 WB/reg: read Reg 01 -> data2 = 00000008
+                 710 IF/PC: addr = 0000001c
+                 710 IF/rom: read Rom 0000001c -> data = 20820000
+                 710 IF/PC: next_addr = 00000020
+                 710 WB/reg: read Reg 02 -> data2 = 00000008
+                 710 WB/reg: read Reg 04 -> data1 = 0000000d
+                 711 MEM/IOManager/ram: read Ram d -> data = xxxxxxxx
+                 711 EXE/alu: a = 0000000d, b = 00000000
+                 711 EXE/alu: f = 0000000d
+                 713 WB/reg: write 0000000d to Reg 02
+                 713 WB/reg: read Reg 02 -> data2 = 0000000d
+                 730 IF/PC: addr = 00000020
+                 730 IF/rom: read Rom 00000020 -> data = aca40000
+                 730 IF/PC: next_addr = 00000024
+                 730 WB/reg: read Reg 04 -> data2 = 0000000d
+                 730 WB/reg: read Reg 05 -> data1 = 00000007
+                 730 ID/CU: opcode = 2b, func = 20
+                 730 ID/CU: regWE = 0
+                 731 MEM/IOManager/ram: read Ram 7 -> data = xxxxxxxx
+                 731 EXE/alu: a = 00000007, b = 00000000
+                 731 EXE/alu: f = 00000007
+                 732 MEM/IOManager/ram: write 0000000d to Ram 7
+                 732 MEM/IOManager/ram: read Ram 7 -> data = 0000000d
+                 750 IF/PC: addr = 00000024
+                 750 IF/rom: read Rom 00000024 -> data = ac040010
+                 750 IF/PC: next_addr = 00000028
+                 750 WB/reg: read Reg 00 -> data1 = 00000000
+                 751 EXE/alu: a = 00000000, b = 00000010
+                 751 EXE/alu: f = 00000010
+                 770 IF/PC: addr = 00000028
+                 770 MEM/IOManager: displaydata = 0000000d
+                 770 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 770 IF/PC: next_addr = 00000010
+                 770 WB/reg: read Reg 03 -> data1 = 0000000d
+                 770 WB/reg: read Reg 05 -> data2 = 00000007
+                 770 ID/CU: opcode = 05, func = 20
+                 770 IF: pcindex = 1
+                 770 EXE/alu: op = 0010
+                 770 EXE/alu: f = fffffff0
+                 771 MEM/IOManager/ram: read Ram 6 -> data = 00000008
+                 771 EXE/alu: a = 0000000d, b = 00000007
+                 771 EXE/alu: f = 00000006
+                 790 IF/PC: addr = 00000010
+                 790 IF/rom: read Rom 00000010 -> data = 20a50001
+                 790 IF/PC: next_addr = 00000014
+                 790 WB/reg: read Reg 05 -> data1 = 00000007
+                 790 ID/CU: opcode = 08, func = 20
+                 790 ID/CU: regWE = 1
+                 790 EXE/alu: op = 0001
+                 790 IF: pcindex = 0
+                 790 EXE/alu: f = 00000014
+                 791 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 791 EXE/alu: a = 00000007, b = 00000001
+                 791 EXE/alu: f = 00000008
+                 793 WB/reg: write 00000008 to Reg 05
+                 793 WB/reg: read Reg 05 -> data1 = 00000008
+                 793 WB/reg: read Reg 05 -> data2 = 00000008
+                 810 IF/PC: addr = 00000014
+                 810 IF/rom: read Rom 00000014 -> data = 00222020
+                 810 IF/PC: next_addr = 00000018
+                 810 WB/reg: read Reg 02 -> data2 = 0000000d
+                 810 WB/reg: read Reg 01 -> data1 = 00000008
+                 810 ID/CU: opcode = 00, func = 20
+                 811 EXE/alu: a = 00000008, b = 0000000d
+                 811 EXE/alu: f = 00000015
+                 813 WB/reg: write 00000015 to Reg 04
+                 830 IF/PC: addr = 00000018
+                 830 IF/rom: read Rom 00000018 -> data = 20410000
+                 830 IF/PC: next_addr = 0000001c
+                 830 WB/reg: read Reg 01 -> data2 = 00000008
+                 830 WB/reg: read Reg 02 -> data1 = 0000000d
+                 830 ID/CU: opcode = 08, func = 20
+                 831 MEM/IOManager/ram: read Ram d -> data = xxxxxxxx
+                 831 EXE/alu: a = 0000000d, b = 00000000
+                 831 EXE/alu: f = 0000000d
+                 833 WB/reg: write 0000000d to Reg 01
+                 833 WB/reg: read Reg 01 -> data2 = 0000000d
+                 850 IF/PC: addr = 0000001c
+                 850 IF/rom: read Rom 0000001c -> data = 20820000
+                 850 IF/PC: next_addr = 00000020
+                 850 WB/reg: read Reg 02 -> data2 = 0000000d
+                 850 WB/reg: read Reg 04 -> data1 = 00000015
+                 851 EXE/alu: a = 00000015, b = 00000000
+                 851 EXE/alu: f = 00000015
+                 853 WB/reg: write 00000015 to Reg 02
+                 853 WB/reg: read Reg 02 -> data2 = 00000015
+                 870 IF/PC: addr = 00000020
+                 870 IF/rom: read Rom 00000020 -> data = aca40000
+                 870 IF/PC: next_addr = 00000024
+                 870 WB/reg: read Reg 04 -> data2 = 00000015
+                 870 WB/reg: read Reg 05 -> data1 = 00000008
+                 870 ID/CU: opcode = 2b, func = 20
+                 870 ID/CU: regWE = 0
+                 871 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 871 EXE/alu: a = 00000008, b = 00000000
+                 871 EXE/alu: f = 00000008
+                 872 MEM/IOManager/ram: write 00000015 to Ram 8
+                 872 MEM/IOManager/ram: read Ram 8 -> data = 00000015
+                 890 IF/PC: addr = 00000024
+                 890 IF/rom: read Rom 00000024 -> data = ac040010
+                 890 IF/PC: next_addr = 00000028
+                 890 WB/reg: read Reg 00 -> data1 = 00000000
+                 891 EXE/alu: a = 00000000, b = 00000010
+                 891 EXE/alu: f = 00000010
+                 910 IF/PC: addr = 00000028
+                 910 MEM/IOManager: displaydata = 00000015
+                 910 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 910 IF/PC: next_addr = 00000010
+                 910 WB/reg: read Reg 03 -> data1 = 0000000d
+                 910 WB/reg: read Reg 05 -> data2 = 00000008
+                 910 ID/CU: opcode = 05, func = 20
+                 910 IF: pcindex = 1
+                 910 EXE/alu: op = 0010
+                 910 EXE/alu: f = fffffff0
+                 911 MEM/IOManager/ram: read Ram 5 -> data = 00000005
+                 911 EXE/alu: a = 0000000d, b = 00000008
+                 911 EXE/alu: f = 00000005
+                 930 IF/PC: addr = 00000010
+                 930 IF/rom: read Rom 00000010 -> data = 20a50001
+                 930 IF/PC: next_addr = 00000014
+                 930 WB/reg: read Reg 05 -> data1 = 00000008
+                 930 ID/CU: opcode = 08, func = 20
+                 930 ID/CU: regWE = 1
+                 930 EXE/alu: op = 0001
+                 930 IF: pcindex = 0
+                 930 EXE/alu: f = 00000015
+                 931 MEM/IOManager/ram: read Ram 9 -> data = xxxxxxxx
+                 931 EXE/alu: a = 00000008, b = 00000001
+                 931 EXE/alu: f = 00000009
+                 933 WB/reg: write 00000009 to Reg 05
+                 933 WB/reg: read Reg 05 -> data1 = 00000009
+                 933 WB/reg: read Reg 05 -> data2 = 00000009
+                 950 IF/PC: addr = 00000014
+                 950 IF/rom: read Rom 00000014 -> data = 00222020
+                 950 IF/PC: next_addr = 00000018
+                 950 WB/reg: read Reg 02 -> data2 = 00000015
+                 950 WB/reg: read Reg 01 -> data1 = 0000000d
+                 950 ID/CU: opcode = 00, func = 20
+                 951 EXE/alu: a = 0000000d, b = 00000015
+                 951 EXE/alu: f = 00000022
+                 953 WB/reg: write 00000022 to Reg 04
+                 970 IF/PC: addr = 00000018
+                 970 IF/rom: read Rom 00000018 -> data = 20410000
+                 970 IF/PC: next_addr = 0000001c
+                 970 WB/reg: read Reg 01 -> data2 = 0000000d
+                 970 WB/reg: read Reg 02 -> data1 = 00000015
+                 970 ID/CU: opcode = 08, func = 20
+                 971 EXE/alu: a = 00000015, b = 00000000
+                 971 EXE/alu: f = 00000015
+                 973 WB/reg: write 00000015 to Reg 01
+                 973 WB/reg: read Reg 01 -> data2 = 00000015
+                 990 IF/PC: addr = 0000001c
+                 990 IF/rom: read Rom 0000001c -> data = 20820000
+                 990 IF/PC: next_addr = 00000020
+                 990 WB/reg: read Reg 02 -> data2 = 00000015
+                 990 WB/reg: read Reg 04 -> data1 = 00000022
+                 991 EXE/alu: a = 00000022, b = 00000000
+                 991 EXE/alu: f = 00000022
+                 993 WB/reg: write 00000022 to Reg 02
+                 993 WB/reg: read Reg 02 -> data2 = 00000022
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1584.223 ; gain = 25.066
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+[Wed Jun  8 19:44:39 2022] Launched synth_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+[Wed Jun  8 19:45:18 2022] Launched synth_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+[Wed Jun  8 19:45:58 2022] Launched impl_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp6/bt_uart_board.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp6/bt_uart_board.xdc]
+Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp6/bt_uart_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/ip/clk_core/clk_core.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/ip/clk_core/clk_core.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2481.984 ; gain = 563.645
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp6/bt_uart_early.xdc]
+Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp6/bt_uart.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp6/bt_uart.xdc]
+Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp6/bt_uart_late.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp6/bt_uart_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2482.242 ; gain = 0.258
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 2482.242 ; gain = 0.258
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2609.016 ; gain = 1006.988
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+[Wed Jun  8 19:47:50 2022] Launched impl_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/impl_1/bt_uart.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/BCD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/EXE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXE
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/IOManager.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IOManager
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/InstrumentDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrumentDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/clkdiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/scroll_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scroll_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/seq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/shift_array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_array
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/new/x7seg_msg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module x7seg_msg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sim_1/new/sim_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto d6a21451c94e48eea568e06b57ade5df --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_1_behav xil_defaultlib.sim_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.rom
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.InstrumentDecoder
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.EXE
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.IOManager
+Compiling module xil_defaultlib.MEM
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.clkdiv
+Compiling module xil_defaultlib.BCD
+Compiling module xil_defaultlib.shift_array
+Compiling module xil_defaultlib.x7seg_msg
+Compiling module xil_defaultlib.scroll_top
+Compiling module xil_defaultlib.seq
+Compiling module xil_defaultlib.filter
+Compiling module xil_defaultlib.sim_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_1_behav -key {Behavioral:sim_1:Functional:sim_1} -tclbatch {sim_1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source sim_1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+                   0 IF/PC: addr = xxxxxxxx
+                   0 IF/PC: next_addr = xxxxxxxx
+                   0 IF/rom: read Rom xxxxxxxx -> data = xxxxxxxx
+                   0 IF: pcindex = x
+                   0 ID/CU: opcode = xx, func = xx
+                   0 ID/CU: regWE = x
+                   0 EXE/alu: a = xxxxxxxx, b = xxxxxxxx
+                   0 EXE/alu: op = xxxx
+                   0 EXE/alu: f = xxxxxxxx
+                   0 MEM/IOManager: displaydata = xxxxxxxx
+                   0 WB/reg: read Reg xx -> data1 = xxxxxxxx
+                   0 WB/reg: read Reg xx -> data2 = xxxxxxxx
+                  10 IF/PC: addr = 00000000
+                  10 IF/rom: read Rom 00000000 -> data = 8c030020
+                  10 WB/reg: read Reg 03 -> data2 = xxxxxxxx
+                  10 WB/reg: read Reg 00 -> data1 = 00000000
+                  10 ID/CU: opcode = 23, func = xx
+                  10 ID/CU: regWE = 1
+                  10 EXE/alu: op = 0001
+                  10 IF: pcindex = 0
+                  10 IF/PC: next_addr = 00000004
+                  11 EXE/alu: a = 00000000, b = 00000020
+                  11 EXE/alu: f = 00000020
+                  13 WB/reg: write 0000000d to Reg 03
+                  13 WB/reg: read Reg 03 -> data2 = 0000000d
+                  30 IF/PC: addr = 00000004
+                  30 IF/rom: read Rom 00000004 -> data = 20010001
+                  30 IF/PC: next_addr = 00000008
+                  30 WB/reg: read Reg 01 -> data2 = xxxxxxxx
+                  30 ID/CU: opcode = 08, func = xx
+                  31 MEM/IOManager/ram: read Ram 1 -> data = xxxxxxxx
+                  31 EXE/alu: a = 00000000, b = 00000001
+                  31 EXE/alu: f = 00000001
+                  33 WB/reg: write 00000001 to Reg 01
+                  33 WB/reg: read Reg 01 -> data2 = 00000001
+                  50 IF/PC: addr = 00000008
+                  50 IF/rom: read Rom 00000008 -> data = 20020001
+                  50 IF/PC: next_addr = 0000000c
+                  50 WB/reg: read Reg 02 -> data2 = xxxxxxxx
+                  53 WB/reg: write 00000001 to Reg 02
+                  53 WB/reg: read Reg 02 -> data2 = 00000001
+                  70 IF/PC: addr = 0000000c
+                  70 IF/rom: read Rom 0000000c -> data = 20050002
+                  70 IF/PC: next_addr = 00000010
+                  70 WB/reg: read Reg 05 -> data2 = xxxxxxxx
+                  71 MEM/IOManager/ram: read Ram 2 -> data = xxxxxxxx
+                  71 EXE/alu: a = 00000000, b = 00000002
+                  71 EXE/alu: f = 00000002
+                  73 WB/reg: write 00000002 to Reg 05
+                  73 WB/reg: read Reg 05 -> data2 = 00000002
+                  90 IF/PC: addr = 00000010
+                  90 IF/rom: read Rom 00000010 -> data = 20a50001
+                  90 IF/PC: next_addr = 00000014
+                  90 WB/reg: read Reg 05 -> data1 = 00000002
+                  91 MEM/IOManager/ram: read Ram 3 -> data = xxxxxxxx
+                  91 EXE/alu: a = 00000002, b = 00000001
+                  91 EXE/alu: f = 00000003
+                  93 WB/reg: write 00000003 to Reg 05
+                  93 WB/reg: read Reg 05 -> data1 = 00000003
+                  93 WB/reg: read Reg 05 -> data2 = 00000003
+                 110 IF/PC: addr = 00000014
+                 110 IF/rom: read Rom 00000014 -> data = 00222020
+                 110 IF/PC: next_addr = 00000018
+                 110 ID/CU: opcode = 00, func = 20
+                 110 WB/reg: read Reg 02 -> data2 = 00000001
+                 110 WB/reg: read Reg 01 -> data1 = 00000001
+                 111 MEM/IOManager/ram: read Ram 2 -> data = xxxxxxxx
+                 111 EXE/alu: a = 00000001, b = 00000001
+                 111 EXE/alu: f = 00000002
+                 113 WB/reg: write 00000002 to Reg 04
+                 130 IF/PC: addr = 00000018
+                 130 IF/rom: read Rom 00000018 -> data = 20410000
+                 130 IF/PC: next_addr = 0000001c
+                 130 WB/reg: read Reg 01 -> data2 = 00000001
+                 130 WB/reg: read Reg 02 -> data1 = 00000001
+                 130 ID/CU: opcode = 08, func = 20
+                 131 MEM/IOManager/ram: read Ram 1 -> data = xxxxxxxx
+                 131 EXE/alu: a = 00000001, b = 00000000
+                 131 EXE/alu: f = 00000001
+                 133 WB/reg: write 00000001 to Reg 01
+                 150 IF/PC: addr = 0000001c
+                 150 IF/rom: read Rom 0000001c -> data = 20820000
+                 150 IF/PC: next_addr = 00000020
+                 150 WB/reg: read Reg 02 -> data2 = 00000001
+                 150 WB/reg: read Reg 04 -> data1 = 00000002
+                 151 MEM/IOManager/ram: read Ram 2 -> data = xxxxxxxx
+                 151 EXE/alu: a = 00000002, b = 00000000
+                 151 EXE/alu: f = 00000002
+                 153 WB/reg: write 00000002 to Reg 02
+                 153 WB/reg: read Reg 02 -> data2 = 00000002
+                 170 IF/PC: addr = 00000020
+                 170 IF/rom: read Rom 00000020 -> data = aca40000
+                 170 IF/PC: next_addr = 00000024
+                 170 WB/reg: read Reg 04 -> data2 = 00000002
+                 170 WB/reg: read Reg 05 -> data1 = 00000003
+                 170 ID/CU: opcode = 2b, func = 20
+                 170 ID/CU: regWE = 0
+                 171 MEM/IOManager/ram: read Ram 3 -> data = xxxxxxxx
+                 171 EXE/alu: a = 00000003, b = 00000000
+                 171 EXE/alu: f = 00000003
+                 172 MEM/IOManager/ram: write 00000002 to Ram 3
+                 172 MEM/IOManager/ram: read Ram 3 -> data = 00000002
+                 190 IF/PC: addr = 00000024
+                 190 IF/rom: read Rom 00000024 -> data = ac040010
+                 190 IF/PC: next_addr = 00000028
+                 190 WB/reg: read Reg 00 -> data1 = 00000000
+                 191 EXE/alu: a = 00000000, b = 00000010
+                 191 EXE/alu: f = 00000010
+                 210 IF/PC: addr = 00000028
+                 210 MEM/IOManager: displaydata = 00000002
+                 210 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 210 IF/PC: next_addr = 00000010
+                 210 WB/reg: read Reg 03 -> data1 = 0000000d
+                 210 WB/reg: read Reg 05 -> data2 = 00000003
+                 210 ID/CU: opcode = 05, func = 20
+                 210 IF: pcindex = 1
+                 210 EXE/alu: op = 0010
+                 210 EXE/alu: f = fffffff0
+                 211 MEM/IOManager/ram: read Ram a -> data = xxxxxxxx
+                 211 EXE/alu: a = 0000000d, b = 00000003
+                 211 EXE/alu: f = 0000000a
+                 230 IF/PC: addr = 00000010
+                 230 IF/rom: read Rom 00000010 -> data = 20a50001
+                 230 IF/PC: next_addr = 00000014
+                 230 WB/reg: read Reg 05 -> data1 = 00000003
+                 230 ID/CU: opcode = 08, func = 20
+                 230 ID/CU: regWE = 1
+                 230 EXE/alu: op = 0001
+                 230 IF: pcindex = 0
+                 230 EXE/alu: f = 00000010
+                 231 MEM/IOManager/ram: read Ram 4 -> data = xxxxxxxx
+                 231 EXE/alu: a = 00000003, b = 00000001
+                 231 EXE/alu: f = 00000004
+                 233 WB/reg: write 00000004 to Reg 05
+                 233 WB/reg: read Reg 05 -> data1 = 00000004
+                 233 WB/reg: read Reg 05 -> data2 = 00000004
+                 250 IF/PC: addr = 00000014
+                 250 IF/rom: read Rom 00000014 -> data = 00222020
+                 250 IF/PC: next_addr = 00000018
+                 250 WB/reg: read Reg 02 -> data2 = 00000002
+                 250 WB/reg: read Reg 01 -> data1 = 00000001
+                 250 ID/CU: opcode = 00, func = 20
+                 251 MEM/IOManager/ram: read Ram 3 -> data = 00000002
+                 251 EXE/alu: a = 00000001, b = 00000002
+                 251 EXE/alu: f = 00000003
+                 253 WB/reg: write 00000003 to Reg 04
+                 270 IF/PC: addr = 00000018
+                 270 IF/rom: read Rom 00000018 -> data = 20410000
+                 270 IF/PC: next_addr = 0000001c
+                 270 WB/reg: read Reg 01 -> data2 = 00000001
+                 270 WB/reg: read Reg 02 -> data1 = 00000002
+                 270 ID/CU: opcode = 08, func = 20
+                 271 MEM/IOManager/ram: read Ram 2 -> data = xxxxxxxx
+                 271 EXE/alu: a = 00000002, b = 00000000
+                 271 EXE/alu: f = 00000002
+                 273 WB/reg: write 00000002 to Reg 01
+                 273 WB/reg: read Reg 01 -> data2 = 00000002
+                 290 IF/PC: addr = 0000001c
+                 290 IF/rom: read Rom 0000001c -> data = 20820000
+                 290 IF/PC: next_addr = 00000020
+                 290 WB/reg: read Reg 02 -> data2 = 00000002
+                 290 WB/reg: read Reg 04 -> data1 = 00000003
+                 291 MEM/IOManager/ram: read Ram 3 -> data = 00000002
+                 291 EXE/alu: a = 00000003, b = 00000000
+                 291 EXE/alu: f = 00000003
+                 293 WB/reg: write 00000003 to Reg 02
+                 293 WB/reg: read Reg 02 -> data2 = 00000003
+                 310 IF/PC: addr = 00000020
+                 310 IF/rom: read Rom 00000020 -> data = aca40000
+                 310 IF/PC: next_addr = 00000024
+                 310 WB/reg: read Reg 04 -> data2 = 00000003
+                 310 WB/reg: read Reg 05 -> data1 = 00000004
+                 310 ID/CU: opcode = 2b, func = 20
+                 310 ID/CU: regWE = 0
+                 311 MEM/IOManager/ram: read Ram 4 -> data = xxxxxxxx
+                 311 EXE/alu: a = 00000004, b = 00000000
+                 311 EXE/alu: f = 00000004
+                 312 MEM/IOManager/ram: write 00000003 to Ram 4
+                 312 MEM/IOManager/ram: read Ram 4 -> data = 00000003
+                 330 IF/PC: addr = 00000024
+                 330 IF/rom: read Rom 00000024 -> data = ac040010
+                 330 IF/PC: next_addr = 00000028
+                 330 WB/reg: read Reg 00 -> data1 = 00000000
+                 331 EXE/alu: a = 00000000, b = 00000010
+                 331 EXE/alu: f = 00000010
+                 350 IF/PC: addr = 00000028
+                 350 MEM/IOManager: displaydata = 00000003
+                 350 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 350 IF/PC: next_addr = 00000010
+                 350 WB/reg: read Reg 03 -> data1 = 0000000d
+                 350 WB/reg: read Reg 05 -> data2 = 00000004
+                 350 ID/CU: opcode = 05, func = 20
+                 350 IF: pcindex = 1
+                 350 EXE/alu: op = 0010
+                 350 EXE/alu: f = fffffff0
+                 351 MEM/IOManager/ram: read Ram 9 -> data = xxxxxxxx
+                 351 EXE/alu: a = 0000000d, b = 00000004
+                 351 EXE/alu: f = 00000009
+                 370 IF/PC: addr = 00000010
+                 370 IF/rom: read Rom 00000010 -> data = 20a50001
+                 370 IF/PC: next_addr = 00000014
+                 370 WB/reg: read Reg 05 -> data1 = 00000004
+                 370 ID/CU: opcode = 08, func = 20
+                 370 ID/CU: regWE = 1
+                 370 EXE/alu: op = 0001
+                 370 IF: pcindex = 0
+                 370 EXE/alu: f = 00000011
+                 371 MEM/IOManager/ram: read Ram 5 -> data = xxxxxxxx
+                 371 EXE/alu: a = 00000004, b = 00000001
+                 371 EXE/alu: f = 00000005
+                 373 WB/reg: write 00000005 to Reg 05
+                 373 WB/reg: read Reg 05 -> data1 = 00000005
+                 373 WB/reg: read Reg 05 -> data2 = 00000005
+                 390 IF/PC: addr = 00000014
+                 390 IF/rom: read Rom 00000014 -> data = 00222020
+                 390 IF/PC: next_addr = 00000018
+                 390 WB/reg: read Reg 02 -> data2 = 00000003
+                 390 WB/reg: read Reg 01 -> data1 = 00000002
+                 390 ID/CU: opcode = 00, func = 20
+                 391 EXE/alu: a = 00000002, b = 00000003
+                 393 WB/reg: write 00000005 to Reg 04
+                 410 IF/PC: addr = 00000018
+                 410 IF/rom: read Rom 00000018 -> data = 20410000
+                 410 IF/PC: next_addr = 0000001c
+                 410 WB/reg: read Reg 01 -> data2 = 00000002
+                 410 WB/reg: read Reg 02 -> data1 = 00000003
+                 410 ID/CU: opcode = 08, func = 20
+                 411 MEM/IOManager/ram: read Ram 3 -> data = 00000002
+                 411 EXE/alu: a = 00000003, b = 00000000
+                 411 EXE/alu: f = 00000003
+                 413 WB/reg: write 00000003 to Reg 01
+                 413 WB/reg: read Reg 01 -> data2 = 00000003
+                 430 IF/PC: addr = 0000001c
+                 430 IF/rom: read Rom 0000001c -> data = 20820000
+                 430 IF/PC: next_addr = 00000020
+                 430 WB/reg: read Reg 02 -> data2 = 00000003
+                 430 WB/reg: read Reg 04 -> data1 = 00000005
+                 431 MEM/IOManager/ram: read Ram 5 -> data = xxxxxxxx
+                 431 EXE/alu: a = 00000005, b = 00000000
+                 431 EXE/alu: f = 00000005
+                 433 WB/reg: write 00000005 to Reg 02
+                 433 WB/reg: read Reg 02 -> data2 = 00000005
+                 450 IF/PC: addr = 00000020
+                 450 IF/rom: read Rom 00000020 -> data = aca40000
+                 450 IF/PC: next_addr = 00000024
+                 450 WB/reg: read Reg 04 -> data2 = 00000005
+                 450 WB/reg: read Reg 05 -> data1 = 00000005
+                 450 ID/CU: opcode = 2b, func = 20
+                 450 ID/CU: regWE = 0
+                 452 MEM/IOManager/ram: write 00000005 to Ram 5
+                 452 MEM/IOManager/ram: read Ram 5 -> data = 00000005
+                 470 IF/PC: addr = 00000024
+                 470 IF/rom: read Rom 00000024 -> data = ac040010
+                 470 IF/PC: next_addr = 00000028
+                 470 WB/reg: read Reg 00 -> data1 = 00000000
+                 471 EXE/alu: a = 00000000, b = 00000010
+                 471 EXE/alu: f = 00000010
+                 490 IF/PC: addr = 00000028
+                 490 MEM/IOManager: displaydata = 00000005
+                 490 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 490 IF/PC: next_addr = 00000010
+                 490 WB/reg: read Reg 03 -> data1 = 0000000d
+                 490 WB/reg: read Reg 05 -> data2 = 00000005
+                 490 ID/CU: opcode = 05, func = 20
+                 490 IF: pcindex = 1
+                 490 EXE/alu: op = 0010
+                 490 EXE/alu: f = fffffff0
+                 491 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 491 EXE/alu: a = 0000000d, b = 00000005
+                 491 EXE/alu: f = 00000008
+                 510 IF/PC: addr = 00000010
+                 510 IF/rom: read Rom 00000010 -> data = 20a50001
+                 510 IF/PC: next_addr = 00000014
+                 510 WB/reg: read Reg 05 -> data1 = 00000005
+                 510 ID/CU: opcode = 08, func = 20
+                 510 ID/CU: regWE = 1
+                 510 EXE/alu: op = 0001
+                 510 IF: pcindex = 0
+                 510 EXE/alu: f = 00000012
+                 511 MEM/IOManager/ram: read Ram 6 -> data = xxxxxxxx
+                 511 EXE/alu: a = 00000005, b = 00000001
+                 511 EXE/alu: f = 00000006
+                 513 WB/reg: write 00000006 to Reg 05
+                 513 WB/reg: read Reg 05 -> data1 = 00000006
+                 513 WB/reg: read Reg 05 -> data2 = 00000006
+                 530 IF/PC: addr = 00000014
+                 530 IF/rom: read Rom 00000014 -> data = 00222020
+                 530 IF/PC: next_addr = 00000018
+                 530 WB/reg: read Reg 02 -> data2 = 00000005
+                 530 WB/reg: read Reg 01 -> data1 = 00000003
+                 530 ID/CU: opcode = 00, func = 20
+                 531 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 531 EXE/alu: a = 00000003, b = 00000005
+                 531 EXE/alu: f = 00000008
+                 533 WB/reg: write 00000008 to Reg 04
+                 550 IF/PC: addr = 00000018
+                 550 IF/rom: read Rom 00000018 -> data = 20410000
+                 550 IF/PC: next_addr = 0000001c
+                 550 WB/reg: read Reg 01 -> data2 = 00000003
+                 550 WB/reg: read Reg 02 -> data1 = 00000005
+                 550 ID/CU: opcode = 08, func = 20
+                 551 MEM/IOManager/ram: read Ram 5 -> data = 00000005
+                 551 EXE/alu: a = 00000005, b = 00000000
+                 551 EXE/alu: f = 00000005
+                 553 WB/reg: write 00000005 to Reg 01
+                 553 WB/reg: read Reg 01 -> data2 = 00000005
+                 570 IF/PC: addr = 0000001c
+                 570 IF/rom: read Rom 0000001c -> data = 20820000
+                 570 IF/PC: next_addr = 00000020
+                 570 WB/reg: read Reg 02 -> data2 = 00000005
+                 570 WB/reg: read Reg 04 -> data1 = 00000008
+                 571 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 571 EXE/alu: a = 00000008, b = 00000000
+                 571 EXE/alu: f = 00000008
+                 573 WB/reg: write 00000008 to Reg 02
+                 573 WB/reg: read Reg 02 -> data2 = 00000008
+                 590 IF/PC: addr = 00000020
+                 590 IF/rom: read Rom 00000020 -> data = aca40000
+                 590 IF/PC: next_addr = 00000024
+                 590 WB/reg: read Reg 04 -> data2 = 00000008
+                 590 WB/reg: read Reg 05 -> data1 = 00000006
+                 590 ID/CU: opcode = 2b, func = 20
+                 590 ID/CU: regWE = 0
+                 591 MEM/IOManager/ram: read Ram 6 -> data = xxxxxxxx
+                 591 EXE/alu: a = 00000006, b = 00000000
+                 591 EXE/alu: f = 00000006
+                 592 MEM/IOManager/ram: write 00000008 to Ram 6
+                 592 MEM/IOManager/ram: read Ram 6 -> data = 00000008
+                 610 IF/PC: addr = 00000024
+                 610 IF/rom: read Rom 00000024 -> data = ac040010
+                 610 IF/PC: next_addr = 00000028
+                 610 WB/reg: read Reg 00 -> data1 = 00000000
+                 611 EXE/alu: a = 00000000, b = 00000010
+                 611 EXE/alu: f = 00000010
+                 630 IF/PC: addr = 00000028
+                 630 MEM/IOManager: displaydata = 00000008
+                 630 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 630 IF/PC: next_addr = 00000010
+                 630 WB/reg: read Reg 03 -> data1 = 0000000d
+                 630 WB/reg: read Reg 05 -> data2 = 00000006
+                 630 ID/CU: opcode = 05, func = 20
+                 630 IF: pcindex = 1
+                 630 EXE/alu: op = 0010
+                 630 EXE/alu: f = fffffff0
+                 631 MEM/IOManager/ram: read Ram 7 -> data = xxxxxxxx
+                 631 EXE/alu: a = 0000000d, b = 00000006
+                 631 EXE/alu: f = 00000007
+                 650 IF/PC: addr = 00000010
+                 650 IF/rom: read Rom 00000010 -> data = 20a50001
+                 650 IF/PC: next_addr = 00000014
+                 650 WB/reg: read Reg 05 -> data1 = 00000006
+                 650 ID/CU: opcode = 08, func = 20
+                 650 ID/CU: regWE = 1
+                 650 EXE/alu: op = 0001
+                 650 IF: pcindex = 0
+                 650 EXE/alu: f = 00000013
+                 651 MEM/IOManager/ram: read Ram 7 -> data = xxxxxxxx
+                 651 EXE/alu: a = 00000006, b = 00000001
+                 651 EXE/alu: f = 00000007
+                 653 WB/reg: write 00000007 to Reg 05
+                 653 WB/reg: read Reg 05 -> data1 = 00000007
+                 653 WB/reg: read Reg 05 -> data2 = 00000007
+                 670 IF/PC: addr = 00000014
+                 670 IF/rom: read Rom 00000014 -> data = 00222020
+                 670 IF/PC: next_addr = 00000018
+                 670 WB/reg: read Reg 02 -> data2 = 00000008
+                 670 WB/reg: read Reg 01 -> data1 = 00000005
+                 670 ID/CU: opcode = 00, func = 20
+                 671 MEM/IOManager/ram: read Ram d -> data = xxxxxxxx
+                 671 EXE/alu: a = 00000005, b = 00000008
+                 671 EXE/alu: f = 0000000d
+                 673 WB/reg: write 0000000d to Reg 04
+                 690 IF/PC: addr = 00000018
+                 690 IF/rom: read Rom 00000018 -> data = 20410000
+                 690 IF/PC: next_addr = 0000001c
+                 690 WB/reg: read Reg 01 -> data2 = 00000005
+                 690 WB/reg: read Reg 02 -> data1 = 00000008
+                 690 ID/CU: opcode = 08, func = 20
+                 691 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 691 EXE/alu: a = 00000008, b = 00000000
+                 691 EXE/alu: f = 00000008
+                 693 WB/reg: write 00000008 to Reg 01
+                 693 WB/reg: read Reg 01 -> data2 = 00000008
+                 710 IF/PC: addr = 0000001c
+                 710 IF/rom: read Rom 0000001c -> data = 20820000
+                 710 IF/PC: next_addr = 00000020
+                 710 WB/reg: read Reg 02 -> data2 = 00000008
+                 710 WB/reg: read Reg 04 -> data1 = 0000000d
+                 711 MEM/IOManager/ram: read Ram d -> data = xxxxxxxx
+                 711 EXE/alu: a = 0000000d, b = 00000000
+                 711 EXE/alu: f = 0000000d
+                 713 WB/reg: write 0000000d to Reg 02
+                 713 WB/reg: read Reg 02 -> data2 = 0000000d
+                 730 IF/PC: addr = 00000020
+                 730 IF/rom: read Rom 00000020 -> data = aca40000
+                 730 IF/PC: next_addr = 00000024
+                 730 WB/reg: read Reg 04 -> data2 = 0000000d
+                 730 WB/reg: read Reg 05 -> data1 = 00000007
+                 730 ID/CU: opcode = 2b, func = 20
+                 730 ID/CU: regWE = 0
+                 731 MEM/IOManager/ram: read Ram 7 -> data = xxxxxxxx
+                 731 EXE/alu: a = 00000007, b = 00000000
+                 731 EXE/alu: f = 00000007
+                 732 MEM/IOManager/ram: write 0000000d to Ram 7
+                 732 MEM/IOManager/ram: read Ram 7 -> data = 0000000d
+                 750 IF/PC: addr = 00000024
+                 750 IF/rom: read Rom 00000024 -> data = ac040010
+                 750 IF/PC: next_addr = 00000028
+                 750 WB/reg: read Reg 00 -> data1 = 00000000
+                 751 EXE/alu: a = 00000000, b = 00000010
+                 751 EXE/alu: f = 00000010
+                 770 IF/PC: addr = 00000028
+                 770 MEM/IOManager: displaydata = 0000000d
+                 770 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 770 IF/PC: next_addr = 00000010
+                 770 WB/reg: read Reg 03 -> data1 = 0000000d
+                 770 WB/reg: read Reg 05 -> data2 = 00000007
+                 770 ID/CU: opcode = 05, func = 20
+                 770 IF: pcindex = 1
+                 770 EXE/alu: op = 0010
+                 770 EXE/alu: f = fffffff0
+                 771 MEM/IOManager/ram: read Ram 6 -> data = 00000008
+                 771 EXE/alu: a = 0000000d, b = 00000007
+                 771 EXE/alu: f = 00000006
+                 790 IF/PC: addr = 00000010
+                 790 IF/rom: read Rom 00000010 -> data = 20a50001
+                 790 IF/PC: next_addr = 00000014
+                 790 WB/reg: read Reg 05 -> data1 = 00000007
+                 790 ID/CU: opcode = 08, func = 20
+                 790 ID/CU: regWE = 1
+                 790 EXE/alu: op = 0001
+                 790 IF: pcindex = 0
+                 790 EXE/alu: f = 00000014
+                 791 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 791 EXE/alu: a = 00000007, b = 00000001
+                 791 EXE/alu: f = 00000008
+                 793 WB/reg: write 00000008 to Reg 05
+                 793 WB/reg: read Reg 05 -> data1 = 00000008
+                 793 WB/reg: read Reg 05 -> data2 = 00000008
+                 810 IF/PC: addr = 00000014
+                 810 IF/rom: read Rom 00000014 -> data = 00222020
+                 810 IF/PC: next_addr = 00000018
+                 810 WB/reg: read Reg 02 -> data2 = 0000000d
+                 810 WB/reg: read Reg 01 -> data1 = 00000008
+                 810 ID/CU: opcode = 00, func = 20
+                 811 EXE/alu: a = 00000008, b = 0000000d
+                 811 EXE/alu: f = 00000015
+                 813 WB/reg: write 00000015 to Reg 04
+                 830 IF/PC: addr = 00000018
+                 830 IF/rom: read Rom 00000018 -> data = 20410000
+                 830 IF/PC: next_addr = 0000001c
+                 830 WB/reg: read Reg 01 -> data2 = 00000008
+                 830 WB/reg: read Reg 02 -> data1 = 0000000d
+                 830 ID/CU: opcode = 08, func = 20
+                 831 MEM/IOManager/ram: read Ram d -> data = xxxxxxxx
+                 831 EXE/alu: a = 0000000d, b = 00000000
+                 831 EXE/alu: f = 0000000d
+                 833 WB/reg: write 0000000d to Reg 01
+                 833 WB/reg: read Reg 01 -> data2 = 0000000d
+                 850 IF/PC: addr = 0000001c
+                 850 IF/rom: read Rom 0000001c -> data = 20820000
+                 850 IF/PC: next_addr = 00000020
+                 850 WB/reg: read Reg 02 -> data2 = 0000000d
+                 850 WB/reg: read Reg 04 -> data1 = 00000015
+                 851 EXE/alu: a = 00000015, b = 00000000
+                 851 EXE/alu: f = 00000015
+                 853 WB/reg: write 00000015 to Reg 02
+                 853 WB/reg: read Reg 02 -> data2 = 00000015
+                 870 IF/PC: addr = 00000020
+                 870 IF/rom: read Rom 00000020 -> data = aca40000
+                 870 IF/PC: next_addr = 00000024
+                 870 WB/reg: read Reg 04 -> data2 = 00000015
+                 870 WB/reg: read Reg 05 -> data1 = 00000008
+                 870 ID/CU: opcode = 2b, func = 20
+                 870 ID/CU: regWE = 0
+                 871 MEM/IOManager/ram: read Ram 8 -> data = xxxxxxxx
+                 871 EXE/alu: a = 00000008, b = 00000000
+                 871 EXE/alu: f = 00000008
+                 872 MEM/IOManager/ram: write 00000015 to Ram 8
+                 872 MEM/IOManager/ram: read Ram 8 -> data = 00000015
+                 890 IF/PC: addr = 00000024
+                 890 IF/rom: read Rom 00000024 -> data = ac040010
+                 890 IF/PC: next_addr = 00000028
+                 890 WB/reg: read Reg 00 -> data1 = 00000000
+                 891 EXE/alu: a = 00000000, b = 00000010
+                 891 EXE/alu: f = 00000010
+                 910 IF/PC: addr = 00000028
+                 910 MEM/IOManager: displaydata = 00000015
+                 910 IF/rom: read Rom 00000028 -> data = 1465fffa
+                 910 IF/PC: next_addr = 00000010
+                 910 WB/reg: read Reg 03 -> data1 = 0000000d
+                 910 WB/reg: read Reg 05 -> data2 = 00000008
+                 910 ID/CU: opcode = 05, func = 20
+                 910 IF: pcindex = 1
+                 910 EXE/alu: op = 0010
+                 910 EXE/alu: f = fffffff0
+                 911 MEM/IOManager/ram: read Ram 5 -> data = 00000005
+                 911 EXE/alu: a = 0000000d, b = 00000008
+                 911 EXE/alu: f = 00000005
+                 930 IF/PC: addr = 00000010
+                 930 IF/rom: read Rom 00000010 -> data = 20a50001
+                 930 IF/PC: next_addr = 00000014
+                 930 WB/reg: read Reg 05 -> data1 = 00000008
+                 930 ID/CU: opcode = 08, func = 20
+                 930 ID/CU: regWE = 1
+                 930 EXE/alu: op = 0001
+                 930 IF: pcindex = 0
+                 930 EXE/alu: f = 00000015
+                 931 MEM/IOManager/ram: read Ram 9 -> data = xxxxxxxx
+                 931 EXE/alu: a = 00000008, b = 00000001
+                 931 EXE/alu: f = 00000009
+                 933 WB/reg: write 00000009 to Reg 05
+                 933 WB/reg: read Reg 05 -> data1 = 00000009
+                 933 WB/reg: read Reg 05 -> data2 = 00000009
+                 950 IF/PC: addr = 00000014
+                 950 IF/rom: read Rom 00000014 -> data = 00222020
+                 950 IF/PC: next_addr = 00000018
+                 950 WB/reg: read Reg 02 -> data2 = 00000015
+                 950 WB/reg: read Reg 01 -> data1 = 0000000d
+                 950 ID/CU: opcode = 00, func = 20
+                 951 EXE/alu: a = 0000000d, b = 00000015
+                 951 EXE/alu: f = 00000022
+                 953 WB/reg: write 00000022 to Reg 04
+                 970 IF/PC: addr = 00000018
+                 970 IF/rom: read Rom 00000018 -> data = 20410000
+                 970 IF/PC: next_addr = 0000001c
+                 970 WB/reg: read Reg 01 -> data2 = 0000000d
+                 970 WB/reg: read Reg 02 -> data1 = 00000015
+                 970 ID/CU: opcode = 08, func = 20
+                 971 EXE/alu: a = 00000015, b = 00000000
+                 971 EXE/alu: f = 00000015
+                 973 WB/reg: write 00000015 to Reg 01
+                 973 WB/reg: read Reg 01 -> data2 = 00000015
+                 990 IF/PC: addr = 0000001c
+                 990 IF/rom: read Rom 0000001c -> data = 20820000
+                 990 IF/PC: next_addr = 00000020
+                 990 WB/reg: read Reg 02 -> data2 = 00000015
+                 990 WB/reg: read Reg 04 -> data1 = 00000022
+                 991 EXE/alu: a = 00000022, b = 00000000
+                 991 EXE/alu: f = 00000022
+                 993 WB/reg: write 00000022 to Reg 02
+                 993 WB/reg: read Reg 02 -> data2 = 00000022
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+[Wed Jun  8 19:53:51 2022] Launched synth_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+[Wed Jun  8 19:55:02 2022] Launched impl_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp11/bt_uart_board.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp11/bt_uart_board.xdc]
+Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp11/bt_uart_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/ip/clk_core/clk_core.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/ip/clk_core/clk_core.xdc:57]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp11/bt_uart_early.xdc]
+Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp11/bt_uart.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp11/bt_uart.xdc]
+Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp11/bt_uart_late.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/singleCPU/.Xil/Vivado-17924-Universe/dcp11/bt_uart_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2655.125 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2655.125 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/Xilinx/Vivado/projects/singleCPU/singleCPU.srcs/sources_1/ip/char_fifo/char_fifo.xci' is already up-to-date
+[Wed Jun  8 19:58:39 2022] Launched impl_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/Xilinx/Vivado/projects/singleCPU/singleCPU.runs/impl_1/bt_uart.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  8 20:06:57 2022...

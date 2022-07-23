@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 26 23:44:44 2021
+# Process ID: 8332
+# Current directory: D:/Xilinx/Vivado/projects/ALU_FIB
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13152 D:\Xilinx\Vivado\projects\ALU_FIB\ALU_FIB.xpr
+# Log file: D:/Xilinx/Vivado/projects/ALU_FIB/vivado.log
+# Journal file: D:/Xilinx/Vivado/projects/ALU_FIB\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.srcs/sim_1/new/sim_2.v w ]
+add_files -fileset sim_1 D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.srcs/sim_1/new/sim_2.v
+update_compile_order -fileset sim_1
+launch_simulation
+source sim_1.tcl
+close_sim

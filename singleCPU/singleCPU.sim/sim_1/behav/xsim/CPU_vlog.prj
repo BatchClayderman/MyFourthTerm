@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../singleCPU.srcs/sources_1/new/CU.v" \
+"../../../../singleCPU.srcs/sources_1/new/EXE.v" \
+"../../../../singleCPU.srcs/sources_1/new/ID.v" \
+"../../../../singleCPU.srcs/sources_1/new/IF.v" \
+"../../../../singleCPU.srcs/sources_1/new/IOManager.v" \
+"../../../../singleCPU.srcs/sources_1/new/InstrumentDecoder.v" \
+"../../../../singleCPU.srcs/sources_1/new/MEM.v" \
+"../../../../singleCPU.srcs/sources_1/new/PC.v" \
+"../../../../singleCPU.srcs/sources_1/new/WB.v" \
+"../../../../singleCPU.srcs/sources_1/new/alu.v" \
+"../../../../singleCPU.srcs/sources_1/new/ram.v" \
+"../../../../singleCPU.srcs/sources_1/new/registers.v" \
+"../../../../singleCPU.srcs/sources_1/new/rom.v" \
+"../../../../singleCPU.srcs/sources_1/new/top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

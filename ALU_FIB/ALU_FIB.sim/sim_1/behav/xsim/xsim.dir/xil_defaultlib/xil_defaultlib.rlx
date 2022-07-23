@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.srcs/sim_1/new/sim_1.v,1622277909,verilog,,,,sim_1,,,,,,,,
+D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.srcs/sim_1/new/sim_2.v,1622279243,verilog,,,,sim_2,,,,,,,,
+D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.srcs/sources_1/new/alu.v,1622034783,verilog,,D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.srcs/sources_1/new/registers.v,,alu,,,,,,,,
+D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.srcs/sources_1/new/registers.v,1622279137,verilog,,D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.srcs/sim_1/new/sim_2.v,,registers,,,,,,,,

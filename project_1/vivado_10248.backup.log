@@ -1,0 +1,421 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jun  6 15:02:30 2021
+# Process ID: 10248
+# Current directory: D:/Xilinx/Vivado/projects/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11768 D:\Xilinx\Vivado\projects\project_1\project_1.xpr
+# Log file: D:/Xilinx/Vivado/projects/project_1/vivado.log
+# Journal file: D:/Xilinx/Vivado/projects/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Vivado/projects/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/guang/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 775.312 ; gain = 103.137
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Xilinx/Vivado/projects/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ramsim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Xilinx/Vivado/projects/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ramsim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/choose.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module choose
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/newram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module newram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sim_1/new/ramsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ramsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 782.262 ; gain = 1.508
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Xilinx/Vivado/projects/project_1/project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto b49d3c02453244648530ffabe5afbcf2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ramsim_behav xil_defaultlib.ramsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.choose
+Compiling module xil_defaultlib.ram
+Compiling module xil_defaultlib.newram
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.ramsim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ramsim_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:20 . Memory (MB): peak = 782.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Xilinx/Vivado/projects/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ramsim_behav -key {Behavioral:sim_1:Functional:ramsim} -tclbatch {ramsim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source ramsim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+                   0 mdata =xxxxxxxx
+                   0 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                   0 maddr =00
+                   0 tmp=xxxxxxxx
+                   0 mdata [31:28]=x
+                   0 mdata [15:12]=x
+                   0 mdata [7:4]=x
+                   5 mdata =123487ab
+                   5 tmp=123487ab
+                   5 mdata [7:4]=a
+                   5 mdata [15:12]=f
+                   5 mdata [31:28]=f
+                  10 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                  10 mdata [15:12]=8
+                  20 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                  20 mdata [31:28]=1
+                  30 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                  30 mdata [15:12]=0
+                  30 mdata [31:28]=0
+                  40 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                  40 mdata [15:12]=8
+                  50 maddr =04
+                  50 mdata =xxxxxxxx
+                  50 tmp=xxxxxxxx
+                  50 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                  50 mdata [7:4]=0
+                  50 mdata [15:12]=0
+                  55 mdata =123487ab
+                  55 tmp=123487ab
+                  60 maddr =08
+                  60 mdata =xxxxxxxx
+                  60 tmp=xxxxxxxx
+                  65 mdata =123487ab
+                  65 tmp=123487ab
+                  70 maddr =00
+                  80 maddr =04
+                  80 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                  80 mdata [7:4]=a
+                  90 maddr =08
+                  90 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                  90 mdata [15:12]=8
+                 160 maddr =00
+                 160 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 160 mdata [15:12]=f
+                 160 mdata [31:28]=f
+                 170 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 170 mdata [15:12]=8
+                 180 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 180 mdata [31:28]=1
+                 190 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 190 mdata [15:12]=0
+                 190 mdata [31:28]=0
+                 200 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 200 mdata [15:12]=8
+                 210 maddr =04
+                 210 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                 210 mdata [7:4]=0
+                 210 mdata [15:12]=0
+                 220 maddr =08
+                 230 maddr =00
+                 240 maddr =04
+                 240 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 240 mdata [7:4]=a
+                 250 maddr =08
+                 250 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 250 mdata [15:12]=8
+                 320 maddr =00
+                 320 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 320 mdata [15:12]=f
+                 320 mdata [31:28]=f
+                 330 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 330 mdata [15:12]=8
+                 340 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 340 mdata [31:28]=1
+                 350 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 350 mdata [15:12]=0
+                 350 mdata [31:28]=0
+                 360 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 360 mdata [15:12]=8
+                 370 maddr =04
+                 370 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                 370 mdata [7:4]=0
+                 370 mdata [15:12]=0
+                 380 maddr =08
+                 390 maddr =00
+                 400 maddr =04
+                 400 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 400 mdata [7:4]=a
+                 410 maddr =08
+                 410 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 410 mdata [15:12]=8
+                 480 maddr =00
+                 480 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 480 mdata [15:12]=f
+                 480 mdata [31:28]=f
+                 490 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 490 mdata [15:12]=8
+                 500 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 500 mdata [31:28]=1
+                 510 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 510 mdata [15:12]=0
+                 510 mdata [31:28]=0
+                 520 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 520 mdata [15:12]=8
+                 530 maddr =04
+                 530 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                 530 mdata [7:4]=0
+                 530 mdata [15:12]=0
+                 540 maddr =08
+                 550 maddr =00
+                 560 maddr =04
+                 560 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 560 mdata [7:4]=a
+                 570 maddr =08
+                 570 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 570 mdata [15:12]=8
+                 640 maddr =00
+                 640 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 640 mdata [15:12]=f
+                 640 mdata [31:28]=f
+                 650 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 650 mdata [15:12]=8
+                 660 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 660 mdata [31:28]=1
+                 670 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 670 mdata [15:12]=0
+                 670 mdata [31:28]=0
+                 680 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 680 mdata [15:12]=8
+                 690 maddr =04
+                 690 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                 690 mdata [7:4]=0
+                 690 mdata [15:12]=0
+                 700 maddr =08
+                 710 maddr =00
+                 720 maddr =04
+                 720 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 720 mdata [7:4]=a
+                 730 maddr =08
+                 730 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 730 mdata [15:12]=8
+                 800 maddr =00
+                 800 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 800 mdata [15:12]=f
+                 800 mdata [31:28]=f
+                 810 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 810 mdata [15:12]=8
+                 820 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 820 mdata [31:28]=1
+                 830 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 830 mdata [15:12]=0
+                 830 mdata [31:28]=0
+                 840 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 840 mdata [15:12]=8
+                 850 maddr =04
+                 850 lb=0,lh=0,lw=0,lbu=0,lhu=0
+                 850 mdata [7:4]=0
+                 850 mdata [15:12]=0
+                 860 maddr =08
+                 870 maddr =00
+                 880 maddr =04
+                 880 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 880 mdata [7:4]=a
+                 890 maddr =08
+                 890 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                 890 mdata [15:12]=8
+                 960 maddr =00
+                 960 lb=1,lh=0,lw=0,lbu=0,lhu=0
+                 960 mdata [15:12]=f
+                 960 mdata [31:28]=f
+                 970 lb=0,lh=1,lw=0,lbu=0,lhu=0
+                 970 mdata [15:12]=8
+                 980 lb=0,lh=0,lw=1,lbu=0,lhu=0
+                 980 mdata [31:28]=1
+                 990 lb=0,lh=0,lw=0,lbu=1,lhu=0
+                 990 mdata [15:12]=0
+                 990 mdata [31:28]=0
+                1000 lb=0,lh=0,lw=0,lbu=0,lhu=1
+                1000 mdata [15:12]=8
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 782.262 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ramsim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:41 . Memory (MB): peak = 782.262 ; gain = 6.949
+launch_runs synth_1 -jobs 4
+[Sun Jun  6 15:07:45 2021] Launched synth_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/project_1/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcsg324-1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 2 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1200.773 ; gain = 380.273
+set_property IOSTANDARD LVCMOS33 [get_ports [list {code[3]} {code[2]} {code[1]} {code[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {result[31]} {result[30]} {result[29]} {result[28]} {result[27]} {result[26]} {result[25]} {result[24]} {result[23]} {result[22]} {result[21]} {result[20]} {result[19]} {result[18]} {result[17]} {result[16]} {result[15]} {result[14]} {result[13]} {result[12]} {result[11]} {result[10]} {result[9]} {result[8]} {result[7]} {result[6]} {result[5]} {result[4]} {result[3]} {result[2]} {result[1]} {result[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list we]]
+place_ports clk P17
+place_ports rst P5
+place_ports we R17
+place_ports we R15
+place_ports {result[0]} K2
+place_ports {result[1]} J2
+place_ports {result[2]} J3
+place_ports {result[3]} H4
+place_ports {result[4]} J4
+place_ports {result[5]} G3
+place_ports {result[6]} G4
+place_ports {result[7]} F6
+place_ports {code[0]} R1
+place_ports {code[1]} N4
+place_ports {code[2]} M4
+place_ports {code[3]} R2
+place_ports {result[8]} K3
+place_ports {result[9]} M1
+place_ports {result[10]} L1
+place_ports {result[11]} K6
+place_ports {result[12]} J5
+place_ports {result[13]} H5
+place_ports {result[14]} H6
+place_ports {result[15]} K1
+place_ports {result[16]} V17
+place_ports {result[17]} V16
+place_ports {result[18]} V15
+place_ports {result[19]} V14
+place_ports {result[20]} V12
+place_ports {result[21]} V11
+place_ports {result[22]} V10
+place_ports {result[23]} V9
+place_ports {result[24]} V7
+place_ports {result[25]} V6
+place_ports {result[26]} V5
+place_ports {result[27]} V4
+place_ports {result[28]} V2
+place_ports {result[29]} V1
+place_ports {result[30]} U18
+place_ports {result[31]} U17
+file mkdir D:/Xilinx/Vivado/projects/project_1/project_1.srcs/constrs_1/new
+close [ open D:/Xilinx/Vivado/projects/project_1/project_1.srcs/constrs_1/new/xdc.xdc w ]
+add_files -fileset constrs_1 D:/Xilinx/Vivado/projects/project_1/project_1.srcs/constrs_1/new/xdc.xdc
+set_property target_constrs_file D:/Xilinx/Vivado/projects/project_1/project_1.srcs/constrs_1/new/xdc.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Jun  6 15:38:38 2021] Launched synth_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/project_1/project_1.runs/synth_1/runme.log
+[Sun Jun  6 15:38:38 2021] Launched impl_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/project_1/project_1.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Xilinx/Vivado/projects/project_1/project_1.srcs/constrs_1/new/xdc.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/project_1/project_1.srcs/constrs_1/new/xdc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jun  6 15:41:38 2021] Launched impl_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/project_1/project_1.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Xilinx/Vivado/projects/project_1/.Xil/Vivado-10248-Universe/dcp2/top.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/project_1/.Xil/Vivado-10248-Universe/dcp2/top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1797.098 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1797.098 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 2 instances
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project D:/Xilinx/Vivado/projects/shumaguan/shumaguan.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc:25]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc:24]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/projects/shumaguan/shumaguan.srcs/constrs_1/new/xdc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sun Jun  6 16:35:28 2021] Launched synth_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/shumaguan/shumaguan.runs/synth_1/runme.log
+[Sun Jun  6 16:35:28 2021] Launched impl_1...
+Run output will be captured here: D:/Xilinx/Vivado/projects/shumaguan/shumaguan.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  6 16:38:34 2021...

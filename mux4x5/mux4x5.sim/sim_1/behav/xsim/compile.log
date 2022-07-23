@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/projects/mux4x5/mux4x5.srcs/sources_1/new/mux4x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/projects/mux4x5/mux4x5.srcs/sim_1/new/sim_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim_1

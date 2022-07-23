@@ -1,0 +1,9 @@
+function integer clogb2;
+	input [31:0] value;
+	reg   [31:0] my_val;
+	begin
+		my_val = value - 1;
+		for (clogb2 = 0; my_val > 0; clogb2 = clogb2 + 1)
+			my_val = my_val >> 1;
+	end
+endfunction

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Jun 14 16:14:19 2021
+# Process ID: 15208
+# Current directory: D:/Xilinx/Vivado/projects/shumaguan
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10508 D:\Xilinx\Vivado\projects\shumaguan\shumaguan.xpr
+# Log file: D:/Xilinx/Vivado/projects/shumaguan/vivado.log
+# Journal file: D:/Xilinx/Vivado/projects/shumaguan\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Vivado/projects/shumaguan/shumaguan.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 772.680 ; gain = 108.332
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 14 16:16:16 2021...

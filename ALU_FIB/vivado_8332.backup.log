@@ -1,0 +1,110 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 26 23:44:44 2021
+# Process ID: 8332
+# Current directory: D:/Xilinx/Vivado/projects/ALU_FIB
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13152 D:\Xilinx\Vivado\projects\ALU_FIB\ALU_FIB.xpr
+# Log file: D:/Xilinx/Vivado/projects/ALU_FIB/vivado.log
+# Journal file: D:/Xilinx/Vivado/projects/ALU_FIB\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.srcs/sim_1/new/sim_2.v w ]
+add_files -fileset sim_1 D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.srcs/sim_1/new/sim_2.v
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj sim_1_vlog.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 871.766 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto f9aea5b273334115821c255a08f2a19c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_1_behav xil_defaultlib.sim_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 871.766 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Xilinx/Vivado/projects/ALU_FIB/ALU_FIB.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_1_behav -key {Behavioral:sim_1:Functional:sim_1} -tclbatch {sim_1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source sim_1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+                   0 alu: a =          x, b =          x, op = 0001
+                   0 alu: f =          x, z = x
+                   0 read data1 =          x, data2 =          x
+                   5 write 00000001 to  1
+                   5 read data1 =          1, data2 =          x
+                   5 alu: a =          1, b =          x, op = 0001
+                  12 write 00000001 to  2
+                  13 read data1 =          1, data2 =          1
+                  13 alu: a =          1, b =          1, op = 0001
+                  14 alu: f =          2, z = 0
+                  20 write 00000002 to  3
+                  28 read data1 =          1, data2 =          2
+                  28 alu: a =          1, b =          2, op = 0001
+                  29 alu: f =          3, z = 0
+                  36 write 00000003 to  4
+                  44 read data1 =          2, data2 =          3
+                  44 alu: a =          2, b =          3, op = 0001
+                  45 alu: f =          5, z = 0
+                  52 write 00000005 to  5
+                  60 read data1 =          3, data2 =          5
+                  60 alu: a =          3, b =          5, op = 0001
+                  61 alu: f =          8, z = 0
+                  68 write 00000008 to  6
+                  76 read data1 =          5, data2 =          8
+                  76 alu: a =          5, b =          8, op = 0001
+                  77 alu: f =         13, z = 0
+                  84 write 0000000d to  7
+                  92 read data1 =          8, data2 =         13
+                  92 alu: a =          8, b =         13, op = 0001
+                  93 alu: f =         21, z = 0
+                 100 write 00000015 to  8
+                 108 read data1 =         13, data2 =         21
+                 108 alu: a =         13, b =         21, op = 0001
+                 109 alu: f =         34, z = 0
+                 116 write 00000022 to  9
+                 124 read data1 =         21, data2 =         34
+                 124 alu: a =         21, b =         34, op = 0001
+                 125 alu: f =         55, z = 0
+                 132 write 00000037 to 10
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 893.430 ; gain = 14.094
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 893.430 ; gain = 21.664
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 27 01:13:59 2021...

@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/choose.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module choose
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/newram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module newram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.srcs/sim_1/new/ramsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ramsim
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/Vivado/projects/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
