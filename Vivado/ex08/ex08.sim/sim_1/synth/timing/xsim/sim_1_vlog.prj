@@ -1,7 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"sim_1_time_synth.v" \
-"../../../../../ex08.srcs/sim_1/new/sim_1.v" \
-
-# Do not sort compile order
-nosort

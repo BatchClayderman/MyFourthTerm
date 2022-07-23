@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/projects/fdivision/fdivision.srcs/sources_1/new/fdivision.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fdivision
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/projects/fdivision/fdivision.srcs/sim_1/new/sim_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module test

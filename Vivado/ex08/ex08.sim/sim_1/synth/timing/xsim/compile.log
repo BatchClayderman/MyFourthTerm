@@ -1,5 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/projects/ex08/ex08.sim/sim_1/synth/timing/xsim/sim_1_time_synth.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ex08
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Xilinx/projects/ex08/ex08.srcs/sim_1/new/sim_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module sim_1
